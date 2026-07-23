@@ -1,0 +1,484 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Twin Physical AI Robotics | Ehime University</title>
+    <meta
+      name="description"
+      content="A digital-twin-centered Physical AI robotics platform for AI-native industrial systems, real-to-sim modeling, multi-agent robot planning, sim-to-real deployment, and physical-virtual interaction."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Digital Twin Physical AI</a>
+      <nav aria-label="Primary navigation">
+        <a href="#overview" data-i18n="nav_overview">Overview</a>
+        <a href="#real2sim" data-i18n="nav_real2sim">Real-to-Sim</a>
+        <a href="#agents" data-i18n="nav_agents">AI Agents</a>
+        <a href="#sim2real" data-i18n="nav_sim2real">Sim-to-Real</a>
+        <a href="#interaction" data-i18n="nav_interaction">Interaction</a>
+        <a href="#publications" data-i18n="nav_papers">Papers</a>
+        <a href="./videos.html" data-i18n="nav_videos">Videos</a>
+      </nav>
+      <div class="language-switch" aria-label="Language selector">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ja">日本語</button>
+        <button type="button" data-lang="zh">中文</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-bg" src="./assets/ai-native-factory.png" alt="AI-native intelligent factory concept" />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Ehime University Computer Science Lab · Taiyo Yuden · Mirabot</p>
+          <h1 id="hero-title" data-i18n="hero_title">Closing the Industrial Physical AI Gap with Digital Twins</h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Industrial robots still struggle with changing factories, unsafe trial-and-error, and hard-to-verify AI
+            plans. We position digital twins as the training, verification, and feedback layer for AI-native industrial
+            robot systems.
+          </p>
+          <div class="hero-actions" aria-label="Project highlights">
+            <a class="button primary" href="#overview" data-i18n="hero_cta_platform">Explore the platform</a>
+            <a class="button" href="./videos.html" data-i18n="hero_cta_video">Watch videos</a>
+            <a class="button ghost" href="#contact" data-i18n="hero_cta_collab">Collaborate</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-strip" aria-label="Project links">
+        <a href="#publications" aria-label="Paper list" data-i18n="strip_paper">Paper</a>
+        <a href="#" aria-label="Slides link placeholder">Slides</a>
+        <a href="#" aria-label="Code link placeholder">Code</a>
+        <a href="#" aria-label="Dataset link placeholder">Dataset</a>
+        <a href="./videos.html" aria-label="Video index" data-i18n="strip_video">Video</a>
+      </section>
+
+      <section id="overview" class="section overview-section">
+        <div class="section-kicker" data-i18n="overview_kicker">Research Overview</div>
+        <h2 data-i18n="overview_title">Making industrial robots learn safely before they act</h2>
+        <p class="lead" data-i18n="overview_lead">
+          We target factories, shipyards, boiler rooms, and inspection sites where robot testing is expensive, risky,
+          and environment-specific. The project builds a closed-loop Physical AI platform that models the site,
+          verifies multi-robot plans, deploys to real robots, and feeds field changes back into simulation.
+        </p>
+
+        <div class="mission-grid" aria-label="Research problem, position, and goal">
+          <article>
+            <span data-i18n="mission_problem_label">Problem</span>
+            <h3 data-i18n="mission_problem_title">Industrial AI cannot rely on trial-and-error in the field</h3>
+            <p data-i18n="mission_problem_text">
+              Real sites change, robot failures are costly, and pure LLM control is difficult to verify before
+              deployment.
+            </p>
+          </article>
+          <article>
+            <span data-i18n="mission_position_label">Position</span>
+            <h3 data-i18n="mission_position_title">Digital twins become the operating layer for Physical AI</h3>
+            <p data-i18n="mission_position_text">
+              Real-to-Sim, Prime/Slave agents, Sim-to-Real, and Sim-to-Real-to-Sim are treated as one industrial robot
+              intelligence loop.
+            </p>
+          </article>
+          <article>
+            <span data-i18n="mission_goal_label">Goal</span>
+            <h3 data-i18n="mission_goal_title">Verified autonomy for AI-native industrial robot systems</h3>
+            <p data-i18n="mission_goal_text">
+              The goal is to let robots understand work sites, plan safely, execute tasks, and continuously update the
+              digital twin from field evidence.
+            </p>
+          </article>
+        </div>
+
+        <div class="spotlight-video">
+          <div>
+            <div class="section-kicker" data-i18n="lab_video_kicker">Lab Robot Showcase</div>
+            <h3 data-i18n="lab_video_title">Real robot platform developed in our laboratory</h3>
+            <p data-i18n="lab_video_text">
+              This public video introduces the physical robot platform developed by the lab. It complements the
+              digital-twin pipeline by showing the real hardware side of the Physical AI system.
+            </p>
+          </div>
+          <div class="youtube-fallback">
+            <a class="youtube-link" href="https://youtu.be/zxKcb8hma6Q" target="_blank" rel="noopener">
+              <span class="play-mark" aria-hidden="true">&#9654;</span>
+              <strong data-i18n="youtube_open">Open the robot showcase on YouTube</strong>
+              <span data-i18n="youtube_note">Embedded playback is disabled, so the video opens in a new tab.</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="overview-media-grid">
+          <article class="overview-card">
+            <div class="overview-media">
+              <img src="./assets/overview-real-to-sim.gif" alt="Real-to-Sim modeling workflow" />
+            </div>
+            <div>
+              <span class="index">01</span>
+              <h3 data-i18n="card_real2sim_title">Real-to-Sim</h3>
+              <p data-i18n="card_real2sim_text">Convert real industrial spaces, objects, dimensions, and layouts into simulation-ready assets.</p>
+            </div>
+          </article>
+
+          <article class="overview-card">
+            <div class="overview-media">
+              <img class="contain-media" src="./videos/2026-07-21_two_go2_multi_robot_navigation.gif" alt="Two Go2 robots navigating in Isaac Sim" />
+            </div>
+            <div>
+              <span class="index">02</span>
+              <h3 data-i18n="card_agents_title">AI-Native Industrial System</h3>
+              <p data-i18n="card_agents_text">Use Prime Agent and Slave Agent architecture to plan, schedule, verify, and execute robot tasks.</p>
+            </div>
+          </article>
+
+          <article class="overview-card">
+            <div class="overview-media">
+              <img class="contain-media" src="./videos/2026-07-21_showroom_3d_model_in_isaaclab.gif" alt="Showroom 3D model imported into Isaac Lab" />
+            </div>
+            <div>
+              <span class="index">03</span>
+              <h3 data-i18n="card_sim2real_title">Sim-to-Real</h3>
+              <p data-i18n="card_sim2real_text">Train and validate navigation, inspection, and manipulation behavior before physical deployment.</p>
+            </div>
+          </article>
+
+          <article class="overview-card">
+            <div class="overview-media">
+              <img src="./assets/physical-virtual-loop.gif" alt="Physical virtual interaction loop" />
+            </div>
+            <div>
+              <span class="index">04</span>
+              <h3 data-i18n="card_interaction_title">Sim-to-Real-to-Sim</h3>
+              <p data-i18n="card_interaction_text">Sense field changes, evaluate robot behavior, and incrementally update the virtual environment.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="real2sim" class="section pillar-section">
+        <div class="pillar-heading">
+          <div>
+            <div class="section-kicker" data-i18n="real2sim_kicker">Pillar 01 · Real-to-Sim</div>
+            <h2 data-i18n="real2sim_title">Generating simulation-ready industrial environments from real-world data</h2>
+          </div>
+          <p data-i18n="real2sim_intro">
+            The Real-to-Sim stream builds reusable digital-twin assets: static spaces, object-level 3D models,
+            physical attributes, scale correction, and automatic layout generation.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <figure class="media-frame">
+            <img src="./assets/overview-real-to-sim.gif" alt="Animated Real-to-Sim modeling workflow" />
+            <figcaption data-i18n="real2sim_figcap">Animated Real-to-Sim workflow for turning real-world data into simulation assets.</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <h3 data-i18n="real2sim_subtitle">From single-image initialization to multi-sensor metric reconstruction</h3>
+            <p data-i18n="real2sim_body">
+              Our published ITC-CSCC 2026 work converts a single photograph into reusable 3D assets and an initial
+              layout. We are extending the pipeline to Odin1 LiDAR + RGB + IMU, moving from dimension estimation to
+              measured scale constraints.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="real2sim_li1">86 object instances across 9 categories evaluated for scale accuracy</li>
+              <li data-i18n="real2sim_li2">Mean scale error: 11.96% in the single-image baseline</li>
+              <li data-i18n="real2sim_li3">50 placement trials achieved 100% spatial-relation and collision-free success</li>
+              <li data-i18n="real2sim_li4">Current pipeline handles 166 models with dimension correction and physical-attribute generation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="image-pair">
+          <figure class="media-frame">
+            <img class="contain-media" src="./videos/2026-07-21_real_to_sim_modeling_stability_case_1.gif" alt="Real-to-Sim modeling stability test case 1" />
+            <figcaption data-i18n="scale_figcap">Real-to-Sim modeling stability test: generated objects compared with the real scene.</figcaption>
+          </figure>
+          <figure class="media-frame">
+            <img class="contain-media" src="./videos/2026-07-21_real_to_sim_modeling_stability_case_1 (2).gif" alt="Real-to-Sim modeling stability test case 2" />
+            <figcaption data-i18n="odin_figcap">Second Real-to-Sim stability test showing virtual reconstruction consistency.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="agents" class="section pillar-section soft-band">
+        <div class="pillar-heading">
+          <div>
+            <div class="section-kicker" data-i18n="agents_kicker">Pillar 02 · Prime Agent / Slave Agent</div>
+            <h2 data-i18n="agents_title">AI-native intelligent industrial systems for multi-robot work</h2>
+          </div>
+          <p data-i18n="agents_intro">
+            The industrial system uses a Prime Agent for global task planning, resource assignment, scheduling, and
+            formal verification, while Slave Agents execute robot-local navigation, sensing, and manipulation.
+          </p>
+        </div>
+
+        <div class="agent-layout">
+          <div class="agent-diagram" aria-label="Prime and Slave Agent architecture">
+            <div class="agent-node prime">Prime Agent<br /><span>Task planning · Scheduling · Verification</span></div>
+            <div class="agent-links">
+              <span>Task list</span>
+              <span>Action plans</span>
+              <span>Robot assignment</span>
+            </div>
+            <div class="slave-row">
+              <div class="agent-node">Slave Agent<br /><span>Go2 navigation</span></div>
+              <div class="agent-node">Slave Agent<br /><span>Robot arm / VLA</span></div>
+              <div class="agent-node">Slave Agent<br /><span>Inspection sensing</span></div>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <h3 data-i18n="agents_subtitle">Reliable planning instead of raw LLM control</h3>
+            <p data-i18n="agents_body">
+              The Prime Agent integrates natural-language task understanding with PDDL planning, PPLTL temporal logic,
+              DAG parallelization, and model checking. The goal is not just to generate plans, but to verify that robot
+              behavior satisfies task goals and industrial rules before execution.
+            </p>
+            <div class="mini-metrics">
+              <article><strong>82.5%</strong><span>PPLTL conversion accuracy with DB retrieval</span></article>
+              <article><strong>90%</strong><span>End-to-end success in VirtualHome evaluation</span></article>
+              <article><strong>0</strong><span>rule violations in the proposed method evaluation</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sim2real" class="section pillar-section">
+        <div class="pillar-heading">
+          <div>
+            <div class="section-kicker" data-i18n="sim2real_kicker">Pillar 03 · Sim-to-Real</div>
+            <h2 data-i18n="sim2real_title">Deploying validated intelligence to real and simulated robot bodies</h2>
+          </div>
+          <p data-i18n="sim2real_intro">
+            Sim-to-Real connects trained and verified behaviors to Go2, robot arms, sensors, ROS 2/Nav2, Jetson edge
+            computing, and inspection-management software.
+          </p>
+        </div>
+
+        <div class="feature-grid reverse-feature">
+          <figure class="media-frame">
+            <img src="./assets/field-robot-demo.gif" alt="Field robot demo in industrial environment" />
+            <figcaption data-i18n="sim2real_figcap">Physical robot operation and field-oriented inspection scenarios.</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <h3 data-i18n="sim2real_subtitle">From simulation task execution to field-ready robot modules</h3>
+            <p data-i18n="sim2real_body">
+              The system already includes Go2 navigation, map/route visualization, waypoint management, scheduled
+              inspection tasks, image acquisition in Isaac Sim, robot-arm introduction, Rviz connection, and showroom
+              model import into Isaac Lab.
+            </p>
+            <ul class="check-list">
+              <li>Go2 + Nav2 navigation and coordinate-based movement verification</li>
+              <li>Inspection task scheduling and execution through the management application</li>
+              <li>SO-101 robot arm import, Rviz connection, and joint motion testing</li>
+              <li>Boiler-room and showroom digital-twin environments for integrated validation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="interaction" class="section pillar-section soft-band">
+        <div class="pillar-heading">
+          <div>
+            <div class="section-kicker" data-i18n="interaction_kicker">Pillar 04 · Physical-Virtual Interaction</div>
+            <h2 data-i18n="interaction_title">Closing the loop from field sensing back to the digital twin</h2>
+          </div>
+          <p data-i18n="interaction_intro">
+            The final layer is Sim-to-Real-to-Sim: physical robots sense changes in the field, update object poses or
+            generate new assets, and allow the Prime Agent to replan using the refreshed virtual environment.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <figure class="media-frame">
+            <img src="./assets/physical-virtual-loop.gif" alt="Sim-to-real-to-sim interaction workflow" />
+            <figcaption data-i18n="interaction_figcap">Field changes are detected, localized, and incrementally reflected into Isaac Sim.</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <h3 data-i18n="interaction_subtitle">Incremental updates instead of rebuilding the whole scene</h3>
+            <p data-i18n="interaction_body">
+              The current design distinguishes moved, new, and disappeared objects. Moved objects update pose only;
+              new objects trigger measurement, 3D generation or retrieval, and USD insertion; updated scenes are
+              checked for collisions, overlaps, and blocked paths.
+            </p>
+            <div class="pipeline">
+              <span>Sense</span>
+              <span>Localize</span>
+              <span>Detect change</span>
+              <span>Update USD</span>
+              <span>Replan</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence" class="section results-section">
+        <div class="section-kicker" data-i18n="evidence_kicker">Integrated Evidence</div>
+        <h2 data-i18n="evidence_title">Progress across modeling, intelligence, deployment, and interaction</h2>
+        <div class="metrics">
+          <article>
+            <strong>4</strong>
+            <span data-i18n="metric_pillars_label">integrated pillars</span>
+            <p data-i18n="metric_pillars_text">Real-to-Sim, AI-native agent system, Sim-to-Real, and Physical-Virtual interaction.</p>
+          </article>
+          <article>
+            <strong>166</strong>
+            <span data-i18n="metric_models_label">model workflow scale</span>
+            <p data-i18n="metric_models_text">Odin1-based processing flow for recognition, measurement, 3D generation, correction, and attributes.</p>
+          </article>
+          <article>
+            <strong>90%</strong>
+            <span data-i18n="metric_prime_label">Prime Agent E2E success</span>
+            <p data-i18n="metric_prime_text">Formal-planning pipeline improved over the LLM-only baseline in evaluated tasks.</p>
+          </article>
+          <article>
+            <strong>2</strong>
+            <span data-i18n="metric_go2_label">Go2 robots in simulation</span>
+            <p data-i18n="metric_go2_text">Multi-robot navigation execution has been checked in Isaac Sim as the next integration target.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section publications-section">
+        <div class="section-kicker" data-i18n="pub_kicker">Publications</div>
+        <h2 data-i18n="pub_title">Conference papers from the project</h2>
+        <p class="lead" data-i18n="pub_lead">
+          The paper folder contains peer-facing outputs covering indoor reconstruction, Real-to-Sim asset generation,
+          heterogeneous multi-robot task planning, and symbolic environment modeling for verification.
+        </p>
+        <div class="paper-list">
+          <article>
+            <h3>Comparative Analysis of Indoor Reconstruction Methods for Digital Twin Generation</h3>
+            <p>Shintaro Ono, Kerun Li, Tomoki Kuzuhara, Koji Kinoshita, Senling Wang, Hiroshi Takahashi</p>
+            <a href="./papers/m65258-ono stamped-e.pdf">Open PDF</a>
+          </article>
+          <article>
+            <h3>Real-to-Sim Scene Generation from a Single Photograph for Robot Simulation</h3>
+            <p>Kerun Li, Senling Wang, Shintaro Ono, Tomoki Kuzuhara, Hiroshi Kai, Hiroshi Takahashi</p>
+            <a href="./papers/m69484-li stamped-e.pdf">Open PDF</a>
+          </article>
+          <article>
+            <h3>Language-Driven Heterogeneous Multi-Robot Task Planning with Structured Experience Memory</h3>
+            <p>Jingjing Shen, Xiaoqi Wei, Mitsuaki Matsumoto, Senling Wang, Hiroshi Takahashi</p>
+            <a href="./papers/m70501-shen stamped-e.pdf">Open PDF</a>
+          </article>
+          <article>
+            <h3>Env2FSA: Automatic Symbolic Environment Modeling for Behavioral Controller Verification</h3>
+            <p>Tomoki Kuzuhara, Senling Wang, Kerun Li, Shintaro Ono, Hiroshi Kai, Hiroshi Takahashi</p>
+            <a href="./papers/m70884-kuzuhara stamped-e.pdf">Open PDF</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section roadmap">
+        <div class="section-kicker" data-i18n="roadmap_kicker">2025-2027 Roadmap</div>
+        <h2 data-i18n="roadmap_title">Toward an AI-native intelligent factory</h2>
+        <div class="timeline">
+          <article>
+            <time>2025</time>
+            <h3 data-i18n="roadmap_2025_title">Foundation built</h3>
+            <p data-i18n="roadmap_2025_text">H100/RTX infrastructure, Isaac/Gazebo/Genesis environments, Go2 prototype, SLAM navigation, and initial multi-agent robot control.</p>
+          </article>
+          <article>
+            <time>2026</time>
+            <h3 data-i18n="roadmap_2026_title">Domain implementation</h3>
+            <p data-i18n="roadmap_2026_text">Shipyard and boiler-room digital twins, Prime/Slave agent training, management app integration, and field sensing for sim-real feedback.</p>
+          </article>
+          <article>
+            <time>2027</time>
+            <h3 data-i18n="roadmap_2027_title">Operational validation</h3>
+            <p data-i18n="roadmap_2027_text">Multi-robot inspection, delivery, anomaly reporting, and digital-twin-driven replanning in real industrial sites.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="team" class="section team">
+        <div class="section-kicker" data-i18n="team_kicker">People and Partners</div>
+        <h2 data-i18n="team_title">Built by a university lab with industrial deployment partners</h2>
+        <p class="lead" data-i18n="team_lead">
+          The project is led by Ehime University researchers and developed with industrial partners who bring robot
+          deployment context, field requirements, and implementation support.
+        </p>
+        <div class="logo-strip" aria-label="Project organizations">
+          <img src="./assets/logos/愛媛大学-logo.webp" alt="Ehime University logo" />
+          <img src="./assets/logos/TAIYO_YUDEN_red_with spaces.png" alt="Taiyo Yuden logo" />
+          <img src="./assets/logos/Mirabot logo.png" alt="Mirabot logo" />
+          <img src="./assets/logos/今治造船imazo_logo.jpg" alt="Imabari Shipbuilding logo" />
+        </div>
+        <div class="team-grid">
+          <article>
+            <h3>Ehime University</h3>
+            <p data-i18n="team_ehime">Computer Science Lab, Graduate School of Science and Engineering</p>
+          </article>
+          <article>
+            <h3>Taiyo Yuden</h3>
+            <p data-i18n="team_taiyo">Industrial collaboration and robot-related deployment context</p>
+          </article>
+          <article>
+            <h3>Mirabot</h3>
+            <p data-i18n="team_mirabot">Robotics collaboration and physical AI implementation support</p>
+          </article>
+        </div>
+        <div class="bio-grid">
+          <article class="bio-card">
+            <div class="bio-header">
+              <img src="./assets/photos/個人写真.jpg" alt="Senling Wang portrait" />
+              <div>
+                <p class="role" data-i18n="bio_wang_role">Project Lead / Computer Systems</p>
+                <h3>Senling Wang</h3>
+              </div>
+            </div>
+            <p data-i18n="bio_wang_text">
+              Dr. Senling Wang received his Ph.D. from Kyushu Institute of Technology. His research background spans
+              computer systems, dependable computing, LSI testing and diagnosis, reconfigurable computing, and chip
+              reliability. He leads this project by applying a computer-systems perspective to digital twins, Physical
+              AI, and industrial robot intelligence.
+            </p>
+            <div class="bio-links">
+              <a href="https://researchmap.jp/senling_wang_scholar" target="_blank" rel="noopener" data-i18n="link_researchmap">researchmap</a>
+              <a href="https://scholar.google.com/citations?hl=ja&user=uGmNX3kAAAAJ" target="_blank" rel="noopener" data-i18n="link_google_scholar">Google Scholar</a>
+              <a href="https://nrid.nii.ac.jp/ja/nrid/1000090735581/" target="_blank" rel="noopener" data-i18n="link_kaken">KAKEN</a>
+            </div>
+          </article>
+          <article class="bio-card">
+            <div class="bio-header">
+              <img src="./assets/photos/★DSC01225（高橋寛先生）-edited-1-768x1024.webp" alt="Hiroshi Takahashi portrait" />
+              <div>
+                <p class="role" data-i18n="bio_takahashi_role">Project Director / Computer Systems</p>
+                <h3>Hiroshi Takahashi</h3>
+              </div>
+            </div>
+            <p data-i18n="bio_takahashi_text">
+              Prof. Hiroshi Takahashi received his Ph.D. in Engineering from Ehime University. He has long-running
+              research on computer system design and testing, VLSI testing, fault-tolerant computing, and dependable
+              computing. As Project Director, he provides senior academic leadership for connecting reliable computer
+              systems research with digital-twin-driven industrial robotics.
+            </p>
+            <div class="bio-links">
+              <a href="https://researchmap.jp/read0171345" target="_blank" rel="noopener" data-i18n="link_researchmap">researchmap</a>
+              <a href="https://scholar.google.com/citations?hl=en&user=8PPhZqoAAAAJ" target="_blank" rel="noopener" data-i18n="link_google_scholar">Google Scholar</a>
+              <a href="https://nrid.nii.ac.jp/ja/nrid/1000080226878/" target="_blank" rel="noopener" data-i18n="link_kaken">KAKEN</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section callout">
+        <h2 data-i18n="contact_title">Open for research collaboration</h2>
+        <p data-i18n="contact_text">
+          We are looking for partners interested in industrial digital twins, AI-native factory systems, field
+          robotics, multi-robot planning, sim-to-real validation, and physical-virtual interaction.
+        </p>
+        <a class="button primary" href="mailto:contact@example.com" data-i18n="contact_button">Contact the lab</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Digital Twin Physical AI Robotics · Ehime University Computer Science Lab</p>
+      <p class="muted">Draft research site. Replace placeholder links, email, papers, code, videos, and partner-approved imagery before public release.</p>
+    </footer>
+    <script src="./language.js"></script>
+  </body>
+</html>
