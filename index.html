@@ -8,6 +8,7 @@
       name="description"
       content="A digital-twin-centered Physical AI robotics platform for AI-native industrial systems, real-to-sim modeling, multi-agent robot planning, sim-to-real deployment, and physical-virtual interaction."
     />
+    <link rel="canonical" href="https://ehimetakahashilab.github.io/Computer-System-Lab.io/" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -20,6 +21,7 @@
         <a href="#sim2real" data-i18n="nav_sim2real">Sim-to-Real</a>
         <a href="#interaction" data-i18n="nav_interaction">Interaction</a>
         <a href="#publications" data-i18n="nav_papers">Papers</a>
+        <a href="#reach" data-i18n="nav_reach">Reach</a>
         <a href="./videos.html" data-i18n="nav_videos">Videos</a>
       </nav>
       <div class="language-switch" aria-label="Language selector">
@@ -394,6 +396,44 @@
         </div>
       </section>
 
+      <section id="reach" class="section reach-section">
+        <div class="section-kicker" data-i18n="reach_kicker">Global Reach</div>
+        <h2 data-i18n="reach_title">Where this research is being discovered</h2>
+        <p class="lead" data-i18n="reach_lead">
+          Aggregate page views and country-level reach since analytics was enabled on 24 July 2026.
+        </p>
+        <div class="reach-layout">
+          <aside class="reach-summary" aria-labelledby="page-view-label">
+            <p id="page-view-label" class="reach-label" data-i18n="reach_total_label">Total page views</p>
+            <strong id="visit-count" class="reach-number" aria-live="polite">&mdash;</strong>
+            <p class="reach-status" data-i18n="reach_updated">Updated periodically</p>
+            <p class="reach-privacy" data-i18n="reach_privacy">
+              Cookie-free aggregate analytics. No IP addresses are stored.
+            </p>
+          </aside>
+          <div class="reach-dashboard">
+            <div class="reach-dashboard-header">
+              <div>
+                <h3 data-i18n="reach_countries_title">Country-level audience</h3>
+                <p data-i18n="reach_countries_text">Explore aggregate visits by country and page.</p>
+              </div>
+              <a
+                href="https://sunnywang.goatcounter.com/"
+                target="_blank"
+                rel="noopener"
+                data-i18n="reach_open_dashboard"
+              >Open dashboard</a>
+            </div>
+            <iframe
+              src="https://sunnywang.goatcounter.com/?hideui=1"
+              title="Privacy-friendly aggregate access statistics"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <section id="team" class="section team">
         <div class="section-kicker" data-i18n="team_kicker">People and Partners</div>
         <h2 data-i18n="team_title">Built by a university lab with industrial deployment partners</h2>
@@ -477,8 +517,10 @@
 
     <footer>
       <p>Digital Twin Physical AI Robotics · Ehime University Computer Science Lab</p>
-      <p class="muted">Draft research site. Replace placeholder links, email, papers, code, videos, and partner-approved imagery before public release.</p>
+      <p class="muted" data-i18n="footer_note">Public research site with privacy-friendly aggregate access analytics.</p>
     </footer>
+    <script data-goatcounter="https://sunnywang.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script src="./analytics.js"></script>
     <script src="./language.js"></script>
   </body>
 </html>

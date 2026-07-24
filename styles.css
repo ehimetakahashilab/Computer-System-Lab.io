@@ -730,6 +730,94 @@ h3 {
   width: min(1140px, calc(100% - 48px));
 }
 
+.reach-section {
+  width: min(1180px, calc(100% - 48px));
+}
+
+.reach-layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.32fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: stretch;
+  margin-top: 34px;
+}
+
+.reach-summary,
+.reach-dashboard {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.reach-summary {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  padding: 28px;
+}
+
+.reach-label,
+.reach-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.reach-number {
+  display: block;
+  min-height: 92px;
+  margin: 8px 0 0;
+  color: var(--blue);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 72px;
+  line-height: 1.15;
+}
+
+.reach-privacy {
+  padding-top: 20px;
+  margin: auto 0 0;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.reach-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.reach-dashboard-header h3,
+.reach-dashboard-header p {
+  margin: 0;
+}
+
+.reach-dashboard-header p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.reach-dashboard-header a {
+  flex: 0 0 auto;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.reach-dashboard iframe {
+  display: block;
+  width: 100%;
+  height: 660px;
+  border: 0;
+  background: #fff;
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -979,9 +1067,14 @@ footer p {
   .feature-grid,
   .agent-layout,
   .reverse-feature,
+  .reach-layout,
   .split,
   .split.reverse {
     grid-template-columns: 1fr;
+  }
+
+  .reach-summary {
+    min-height: 230px;
   }
 
   .overview-card h3 {
@@ -1003,8 +1096,18 @@ footer p {
   .pillar-section,
   .publications-section,
   .results-section,
+  .reach-section,
   .roadmap {
     width: auto;
+  }
+
+  .reach-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reach-dashboard iframe {
+    height: 820px;
   }
 
   .section {
