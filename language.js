@@ -120,10 +120,10 @@ const translations = {
     team_researchers_title: "Student researchers",
     bio_wang_role: "Project Lead / Computer Systems",
     bio_wang_text:
-      "Dr. Senling Wang received his Ph.D. from Kyushu Institute of Technology. His research background spans computer systems, dependable computing, LSI testing and diagnosis, reconfigurable computing, and chip reliability. He leads this project by applying a computer-systems perspective to digital twins, Physical AI, and industrial robot intelligence.",
+      "Dr. Senling Wang is a lecturer in the Graduate School of Science and Engineering at Ehime University and leads this project. His research spans dependable computer systems, VLSI testing and fault diagnosis, reconfigurable computing, hardware security, and machine-learning-assisted testing and reliability. Building on this systems background, he develops digital-twin and Physical AI platforms that connect environment modeling, verified AI-agent planning, robot simulation, and industrial field validation.",
     bio_takahashi_role: "Project Director / Computer Systems",
     bio_takahashi_text:
-      "Prof. Hiroshi Takahashi received his Ph.D. in Engineering from Ehime University. He has long-running research on computer system design and testing, VLSI testing, fault-tolerant computing, and dependable computing. As Project Director, he provides senior academic leadership for connecting reliable computer systems research with digital-twin-driven industrial robotics.",
+      "Prof. Hiroshi Takahashi is a professor in the Graduate School of Science and Engineering at Ehime University and serves as Project Director. His long-running research covers computer-system design and testing, VLSI fault testing and diagnosis, dependable and fault-tolerant computing, reconfigurable logic, and hardware security. In this project, he provides academic and systems leadership for integrating reliable computing, formal verification, digital twins, and industrial robotics.",
     member_li_role: "Embedded Systems / Real-to-Sim",
     member_li_bio:
       "Kerun Li is a second-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in embedded systems development. His work spans robot SLAM and navigation, computer vision, generative AI, and Real-to-Sim 3D scene reconstruction. As first author of the team's single-photograph Real-to-Sim pipeline, he develops methods that turn real observations into reusable 3D assets and physically plausible simulation scenes. He holds two utility model registrations, two registered designs, and one software copyright, with one invention patent application under examination. As an undergraduate, he was named an Outstanding Graduate of Zhejiang Province and received the Zhejiang Provincial Government Scholarship.",
@@ -281,10 +281,10 @@ const translations = {
     team_researchers_title: "学生研究メンバー",
     bio_wang_role: "研究代表 / コンピュータシステム",
     bio_wang_text:
-      "王森岭博士は九州工業大学で博士号を取得しました。コンピュータシステム、ディペンダブルコンピューティング、LSIテスト・診断、リコンフィギュラブルコンピューティング、チップ信頼性を研究基盤とし、本プロジェクトではコンピュータシステムの視点からデジタルツイン、Physical AI、産業ロボット知能を統合する研究を主導します。",
+      "王 森レイ博士は愛媛大学大学院理工学研究科の講師で、本プロジェクトを主導しています。ディペンダブルコンピュータシステム、VLSIテスト・故障診断、リコンフィギュラブルコンピューティング、ハードウェアセキュリティ、機械学習を活用したテスト・信頼性技術を研究してきました。これらのシステム研究を基盤に、環境モデリング、検証可能なAIエージェント計画、ロボットシミュレーション、産業現場実証をつなぐデジタルツイン／Physical AI基盤を開発しています。",
     bio_takahashi_role: "プロジェクトディレクター / コンピュータシステム",
     bio_takahashi_text:
-      "高橋寛教授は愛媛大学で博士（工学）を取得しました。コンピュータシステムの設計とテスト、VLSIテスト、フォールトトレラントコンピューティング、ディペンダブルコンピューティングに関する長年の研究実績を持ち、プロジェクトディレクターとして、信頼できるコンピュータシステム研究とデジタルツイン駆動型産業ロボティクスを結び付ける学術的リーダーシップを担います。",
+      "高橋寛教授は愛媛大学大学院理工学研究科に所属し、本プロジェクトのディレクターを務めています。コンピュータシステムの設計・テスト、VLSIの故障検査・診断、ディペンダブル／フォールトトレラントコンピューティング、リコンフィギュラブルロジック、ハードウェアセキュリティに関する長年の研究実績を持ちます。本プロジェクトでは、信頼できる計算機システム、形式検証、デジタルツイン、産業ロボティクスを統合するための学術的・システム的リーダーシップを担っています。",
     member_li_role: "組込みシステム / Real-to-Sim",
     member_li_bio:
       "Kerun Liは、愛媛大学大学院理工学研究科博士前期課程2年に在籍し、組込みシステム開発を専門としています。本プロジェクトでは、ロボットのSLAM・ナビゲーション、コンピュータビジョン、生成AI、Real-to-Simによる3次元シーン再構築に取り組んでいます。単一写真からのReal-to-Simパイプラインに関する論文の筆頭著者として、実世界の観測を再利用可能な3D資産と物理的に妥当なシミュレーションシーンへ変換する手法を研究しています。実用新案2件、意匠登録2件、ソフトウェア著作権1件を取得し、発明特許1件が審査中です。学部在学中には浙江省優秀卒業生に選出され、浙江省政府奨学金を受賞しました。",
@@ -441,10 +441,10 @@ const translations = {
     team_researchers_title: "学生研究成员",
     bio_wang_role: "项目负责人 / 计算机系统",
     bio_wang_text:
-      "王森岭博士获得九州工业大学博士学位。他的研究基础涵盖计算机系统、可信计算、LSI测试与诊断、可重构计算和芯片可靠性。在本项目中，他从计算机系统视角主导数字孪生、Physical AI和工业机器人智能的一体化研究。",
+      "王森岭博士现任爱媛大学大学院理工学研究科讲师，并负责领导本项目。他长期研究可信计算机系统、VLSI测试与故障诊断、可重构计算、硬件安全，以及机器学习辅助的测试与可靠性技术。以这些系统研究为基础，他正在开发连接环境建模、可验证AI智能体规划、机器人仿真和工业现场验证的数字孪生与Physical AI平台。",
     bio_takahashi_role: "项目主任 / 计算机系统",
     bio_takahashi_text:
-      "高桥宽教授获得爱媛大学工学博士学位。他长期从事计算机系统设计与测试、VLSI测试、容错计算和可信计算研究。作为项目主任，他为可靠计算机系统研究与数字孪生驱动的工业机器人之间的连接提供资深学术领导。",
+      "高桥宽教授现任爱媛大学大学院理工学研究科教授，并担任本项目主任。他长期研究计算机系统设计与测试、VLSI故障测试与诊断、可信与容错计算、可重构逻辑和硬件安全。在本项目中，他为可靠计算、形式化验证、数字孪生与工业机器人技术的融合提供学术和系统层面的领导。",
     member_li_role: "嵌入式系统 / Real-to-Sim",
     member_li_bio:
       "Kerun Li现为爱媛大学大学院理工学研究科硕士二年级学生，专长为嵌入式系统开发。在本项目中，他开展机器人SLAM与导航、计算机视觉、生成式AI以及基于Real-to-Sim的三维场景重建研究。作为单张照片Real-to-Sim流程论文的第一作者，他研究将真实观测转换为可复用三维资产和物理合理仿真场景的方法。他已取得2项实用新型、2项外观设计注册和1项软件著作权，另有1项发明专利申请正在审查中。本科期间，他曾获评浙江省优秀毕业生并获得浙江省政府奖学金。",
