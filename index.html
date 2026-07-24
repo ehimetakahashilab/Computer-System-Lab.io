@@ -95,22 +95,22 @@
           </article>
         </div>
 
-        <div class="spotlight-video">
+        <div id="hime" class="spotlight-video">
           <div>
             <div class="section-kicker" data-i18n="lab_video_kicker">Lab Robot Showcase</div>
-            <h3 data-i18n="lab_video_title">Real robot platform developed in our laboratory</h3>
+            <h3 data-i18n="lab_video_title">HIME: an AI agent robot from Ehime University</h3>
             <p data-i18n="lab_video_text">
-              This public video introduces the physical robot platform developed by the lab. It complements the
-              digital-twin pipeline by showing the real hardware side of the Physical AI system.
+              HIME brings our work on AI agents, autonomous navigation, and physical robot systems together in a
+              laboratory-developed platform.
             </p>
           </div>
-          <div class="youtube-fallback">
-            <a class="youtube-link" href="https://youtu.be/zxKcb8hma6Q" target="_blank" rel="noopener">
-              <span class="play-mark" aria-hidden="true">&#9654;</span>
-              <strong data-i18n="youtube_open">Open the robot showcase on YouTube</strong>
-              <span data-i18n="youtube_note">Embedded playback is disabled, so the video opens in a new tab.</span>
-            </a>
-          </div>
+          <figure class="spotlight-media">
+            <video controls preload="metadata" playsinline>
+              <source src="./videos/hime-ai-agent-robot-showcase.mp4" type="video/mp4" />
+              Your browser does not support embedded video playback.
+            </video>
+            <figcaption data-i18n="lab_video_caption">Introducing HIME, our laboratory-developed AI agent robot.</figcaption>
+          </figure>
         </div>
 
         <div class="overview-media-grid">
@@ -461,6 +461,7 @@
             <p data-i18n="team_mirabot">Robotics collaboration and physical AI implementation support</p>
           </article>
         </div>
+        <h3 class="team-section-title" data-i18n="team_leadership_title">Project leadership</h3>
         <div class="bio-grid">
           <article class="bio-card">
             <div class="bio-header">
@@ -501,6 +502,96 @@
               <a href="https://scholar.google.com/citations?hl=en&user=8PPhZqoAAAAJ" target="_blank" rel="noopener" data-i18n="link_google_scholar">Google Scholar</a>
               <a href="https://nrid.nii.ac.jp/ja/nrid/1000080226878/" target="_blank" rel="noopener" data-i18n="link_kaken">KAKEN</a>
             </div>
+          </article>
+        </div>
+        <figure class="team-photo">
+          <img
+            src="./assets/photos/team-itc-cscc-2026.jpg"
+            alt="Ehime University research team at ITC-CSCC 2026"
+            loading="lazy"
+          />
+          <figcaption data-i18n="team_photo_caption">Our research team at ITC-CSCC 2026.</figcaption>
+        </figure>
+        <h3 id="student-researchers" class="team-section-title" data-i18n="team_researchers_title">Student researchers</h3>
+        <div class="member-grid">
+          <article class="member-card">
+            <div class="member-header">
+              <img src="./assets/photos/kerun-li.jpg" alt="Kerun Li portrait" loading="lazy" />
+              <div>
+                <p class="role" data-i18n="member_li_role">Embedded Systems / Real-to-Sim</p>
+                <h3>Kerun Li</h3>
+              </div>
+            </div>
+            <p data-i18n="member_li_bio">
+              Kerun Li is a second-year master's student in the Graduate School of Science and Engineering at Ehime
+              University, specializing in embedded systems development. His work spans robot SLAM and navigation,
+              computer vision, generative AI, and Real-to-Sim 3D scene reconstruction. As first author of the team's
+              single-photograph Real-to-Sim pipeline, he develops methods that turn real observations into reusable 3D
+              assets and physically plausible simulation scenes. He holds two utility model registrations, two
+              registered designs, and one software copyright, with one invention patent application under examination.
+              As an undergraduate, he was named an Outstanding Graduate of Zhejiang Province and received the Zhejiang
+              Provincial Government Scholarship.
+            </p>
+            <a class="member-paper" href="./papers/m69484-li stamped-e.pdf">
+              Real-to-Sim Scene Generation from a Single Photograph for Robot Simulation
+            </a>
+          </article>
+          <article class="member-card">
+            <div class="member-header">
+              <img src="./assets/photos/tomoki-kuzuhara.jpg" alt="Tomoki Kuzuhara portrait" loading="lazy" />
+              <div>
+                <p class="role" data-i18n="member_kuzuhara_role">Cybersecurity / Formal Verification</p>
+                <h3>Tomoki Kuzuhara</h3>
+              </div>
+            </div>
+            <p data-i18n="member_kuzuhara_bio">
+              Tomoki Kuzuhara is a second-year master's student in the Graduate School of Science and Engineering at
+              Ehime University, specializing in cybersecurity. He develops and verifies the Prime Agent and builds
+              knowledge bases for industrial fields. As first author of Env2FSA, he studies visual grounding,
+              PDDL-consistent symbolic environment modeling, and counterexample-guided formal verification of robot
+              behavior controllers.
+            </p>
+            <a class="member-paper" href="./papers/m70884-kuzuhara stamped-e.pdf">
+              Env2FSA: Automatic Symbolic Environment Modeling for Behavioral Controller Verification
+            </a>
+          </article>
+          <article class="member-card">
+            <div class="member-header">
+              <img src="./assets/photos/shintaro-ono.jpg" alt="Shintaro Ono portrait" loading="lazy" />
+              <div>
+                <p class="role" data-i18n="member_ono_role">Image Processing / Environment Modeling</p>
+                <h3>Shintaro Ono</h3>
+              </div>
+            </div>
+            <p data-i18n="member_ono_bio">
+              Shintaro Ono is a second-year master's student in the Graduate School of Science and Engineering at Ehime
+              University, specializing in image processing. His project work covers static spatial model generation,
+              analog meter digitization, and in-field change detection. As first author of a comparative study of indoor
+              reconstruction methods, he evaluates BEV, heightmap, and plane-based approaches for generating
+              simulation-ready static geometry from LiDAR point clouds.
+            </p>
+            <a class="member-paper" href="./papers/m65258-ono stamped-e.pdf">
+              Comparative Analysis of Indoor Reconstruction Methods for Digital Twin Generation
+            </a>
+          </article>
+          <article class="member-card">
+            <div class="member-header">
+              <img src="./assets/photos/jingjing-shen.jpg" alt="Jingjing Shen portrait" loading="lazy" />
+              <div>
+                <p class="role" data-i18n="member_shen_role">Planning Optimization / Multi-Robot Systems</p>
+                <h3>Jingjing Shen</h3>
+              </div>
+            </div>
+            <p data-i18n="member_shen_bio">
+              Jingjing Shen is a second-year master's student in the Graduate School of Science and Engineering at
+              Ehime University, specializing in planning optimization. She designs and validates action-planning
+              agents. As first author of the team's language-driven heterogeneous multi-robot planning framework, she
+              studies natural-language task decomposition, capability-aware team formation and allocation, structured
+              experience memory, and feedback-driven plan repair.
+            </p>
+            <a class="member-paper" href="./papers/m70501-shen stamped-e.pdf">
+              Language-Driven Heterogeneous Multi-Robot Task Planning with Structured Experience Memory
+            </a>
           </article>
         </div>
       </section>

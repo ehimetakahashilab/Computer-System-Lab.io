@@ -34,11 +34,10 @@ const translations = {
     mission_goal_text:
       "The goal is to let robots understand work sites, plan safely, execute tasks, and continuously update the digital twin from field evidence.",
     lab_video_kicker: "Lab Robot Showcase",
-    lab_video_title: "Real robot platform developed in our laboratory",
+    lab_video_title: "HIME: an AI agent robot from Ehime University",
     lab_video_text:
-      "This public video introduces the physical robot platform developed by the lab. It complements the digital-twin pipeline by showing the real hardware side of the Physical AI system.",
-    youtube_open: "Open the robot showcase on YouTube",
-    youtube_note: "Embedded playback is disabled, so the video opens in a new tab.",
+      "HIME brings our work on AI agents, autonomous navigation, and physical robot systems together in a laboratory-developed platform.",
+    lab_video_caption: "Introducing HIME, our laboratory-developed AI agent robot.",
     card_real2sim_title: "Real-to-Sim",
     card_real2sim_text: "Convert real industrial spaces, objects, dimensions, and layouts into simulation-ready assets.",
     card_agents_title: "AI-Native Industrial System",
@@ -116,12 +115,27 @@ const translations = {
     team_ehime: "Computer Science Lab, Graduate School of Science and Engineering",
     team_taiyo: "Industrial collaboration and robot-related deployment context",
     team_mirabot: "Robotics collaboration and physical AI implementation support",
+    team_leadership_title: "Project leadership",
+    team_photo_caption: "Our research team at ITC-CSCC 2026.",
+    team_researchers_title: "Student researchers",
     bio_wang_role: "Project Lead / Computer Systems",
     bio_wang_text:
       "Dr. Senling Wang received his Ph.D. from Kyushu Institute of Technology. His research background spans computer systems, dependable computing, LSI testing and diagnosis, reconfigurable computing, and chip reliability. He leads this project by applying a computer-systems perspective to digital twins, Physical AI, and industrial robot intelligence.",
     bio_takahashi_role: "Project Director / Computer Systems",
     bio_takahashi_text:
       "Prof. Hiroshi Takahashi received his Ph.D. in Engineering from Ehime University. He has long-running research on computer system design and testing, VLSI testing, fault-tolerant computing, and dependable computing. As Project Director, he provides senior academic leadership for connecting reliable computer systems research with digital-twin-driven industrial robotics.",
+    member_li_role: "Embedded Systems / Real-to-Sim",
+    member_li_bio:
+      "Kerun Li is a second-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in embedded systems development. His work spans robot SLAM and navigation, computer vision, generative AI, and Real-to-Sim 3D scene reconstruction. As first author of the team's single-photograph Real-to-Sim pipeline, he develops methods that turn real observations into reusable 3D assets and physically plausible simulation scenes. He holds two utility model registrations, two registered designs, and one software copyright, with one invention patent application under examination. As an undergraduate, he was named an Outstanding Graduate of Zhejiang Province and received the Zhejiang Provincial Government Scholarship.",
+    member_kuzuhara_role: "Cybersecurity / Formal Verification",
+    member_kuzuhara_bio:
+      "Tomoki Kuzuhara is a second-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in cybersecurity. He develops and verifies the Prime Agent and builds knowledge bases for industrial fields. As first author of Env2FSA, he studies visual grounding, PDDL-consistent symbolic environment modeling, and counterexample-guided formal verification of robot behavior controllers.",
+    member_ono_role: "Image Processing / Environment Modeling",
+    member_ono_bio:
+      "Shintaro Ono is a second-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in image processing. His project work covers static spatial model generation, analog meter digitization, and in-field change detection. As first author of a comparative study of indoor reconstruction methods, he evaluates BEV, heightmap, and plane-based approaches for generating simulation-ready static geometry from LiDAR point clouds.",
+    member_shen_role: "Planning Optimization / Multi-Robot Systems",
+    member_shen_bio:
+      "Jingjing Shen is a second-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in planning optimization. She designs and validates action-planning agents. As first author of the team's language-driven heterogeneous multi-robot planning framework, she studies natural-language task decomposition, capability-aware team formation and allocation, structured experience memory, and feedback-driven plan repair.",
     link_researchmap: "researchmap",
     link_google_scholar: "Google Scholar",
     link_kaken: "KAKEN",
@@ -181,11 +195,10 @@ const translations = {
     mission_goal_text:
       "ロボットが作業現場を理解し、安全に計画し、実行し、現場データに基づいてデジタルツインを継続更新できることを目指します。",
     lab_video_kicker: "実機ロボット紹介",
-    lab_video_title: "研究室で開発した実機ロボットプラットフォーム",
+    lab_video_title: "愛媛大学発 AIエージェントロボット「HIME」",
     lab_video_text:
-      "公開動画では、研究室で開発した実機ロボットを紹介しています。デジタルツインだけでなく、Physical AIを実世界で動かすハードウェア側の取り組みを示します。",
-    youtube_open: "YouTubeで実機ロボット動画を見る",
-    youtube_note: "YouTube側の設定により埋め込み再生できないため、新しいタブで開きます。",
+      "HIMEは、AIエージェント、自律ナビゲーション、実機ロボットシステムに関する我々の研究を統合した、研究室開発のロボットプラットフォームです。",
+    lab_video_caption: "研究室で開発したAIエージェントロボット「HIME」の紹介動画。",
     card_real2sim_title: "Real-to-Sim",
     card_real2sim_text: "実世界の産業空間、物体、寸法、レイアウトをシミュレーション可能な資産へ変換します。",
     card_agents_title: "AIネイティブ産業システム",
@@ -263,12 +276,27 @@ const translations = {
     team_ehime: "大学院理工学研究科 計算機システム研究室",
     team_taiyo: "産業連携とロボット活用現場の文脈提供",
     team_mirabot: "ロボティクス連携とPhysical AI実装支援",
+    team_leadership_title: "プロジェクトリーダー",
+    team_photo_caption: "ITC-CSCC 2026に参加した研究チーム。",
+    team_researchers_title: "学生研究メンバー",
     bio_wang_role: "研究代表 / コンピュータシステム",
     bio_wang_text:
       "王森岭博士は九州工業大学で博士号を取得しました。コンピュータシステム、ディペンダブルコンピューティング、LSIテスト・診断、リコンフィギュラブルコンピューティング、チップ信頼性を研究基盤とし、本プロジェクトではコンピュータシステムの視点からデジタルツイン、Physical AI、産業ロボット知能を統合する研究を主導します。",
     bio_takahashi_role: "プロジェクトディレクター / コンピュータシステム",
     bio_takahashi_text:
       "高橋寛教授は愛媛大学で博士（工学）を取得しました。コンピュータシステムの設計とテスト、VLSIテスト、フォールトトレラントコンピューティング、ディペンダブルコンピューティングに関する長年の研究実績を持ち、プロジェクトディレクターとして、信頼できるコンピュータシステム研究とデジタルツイン駆動型産業ロボティクスを結び付ける学術的リーダーシップを担います。",
+    member_li_role: "組込みシステム / Real-to-Sim",
+    member_li_bio:
+      "Kerun Liは、愛媛大学大学院理工学研究科博士前期課程2年に在籍し、組込みシステム開発を専門としています。本プロジェクトでは、ロボットのSLAM・ナビゲーション、コンピュータビジョン、生成AI、Real-to-Simによる3次元シーン再構築に取り組んでいます。単一写真からのReal-to-Simパイプラインに関する論文の筆頭著者として、実世界の観測を再利用可能な3D資産と物理的に妥当なシミュレーションシーンへ変換する手法を研究しています。実用新案2件、意匠登録2件、ソフトウェア著作権1件を取得し、発明特許1件が審査中です。学部在学中には浙江省優秀卒業生に選出され、浙江省政府奨学金を受賞しました。",
+    member_kuzuhara_role: "サイバーセキュリティ / 形式検証",
+    member_kuzuhara_bio:
+      "Tomoki Kuzuharaは、愛媛大学大学院理工学研究科博士前期課程2年に在籍し、サイバーセキュリティを専門としています。本プロジェクトでは、Prime Agentの実装・検証と産業現場のナレッジベース構築を担当しています。Env2FSAに関する論文の筆頭著者として、視覚グラウンディング、PDDLと整合する記号的環境モデル、反例に基づくロボット行動コントローラの形式検証を研究しています。",
+    member_ono_role: "画像処理 / 環境モデリング",
+    member_ono_bio:
+      "Shintaro Onoは、愛媛大学大学院理工学研究科博士前期課程2年に在籍し、画像処理技術を専門としています。本プロジェクトでは、実環境の静的空間モデル生成、アナログメータのデジタル化、現場内の変化検知に取り組んでいます。屋内再構成手法の比較研究に関する論文の筆頭著者として、LiDAR点群からシミュレーション可能な静的形状を生成するBEV、Heightmap、平面ベース手法を評価しています。",
+    member_shen_role: "プランニング最適化 / 複数ロボット",
+    member_shen_bio:
+      "Jingjing Shenは、愛媛大学大学院理工学研究科博士前期課程2年に在籍し、プランニング最適化を専門としています。本プロジェクトでは、行為プランニングエージェントの設計と検証を担当しています。言語駆動型の異種複数ロボット計画に関する論文の筆頭著者として、自然言語タスク分解、能力制約を考慮したチーム編成・タスク割当、構造化経験メモリ、実行フィードバックに基づく計画修復を研究しています。",
     link_researchmap: "researchmap",
     link_google_scholar: "Google Scholar",
     link_kaken: "KAKEN",
@@ -327,11 +355,10 @@ const translations = {
     mission_goal_text:
       "目标是让机器人理解作业现场、安全规划、执行任务，并基于现场证据持续更新数字孪生。",
     lab_video_kicker: "实体机器人展示",
-    lab_video_title: "研究室开发的实体机器人平台",
+    lab_video_title: "爱媛大学AI智能体机器人“HIME”",
     lab_video_text:
-      "公开视频介绍研究室开发的实体机器人平台，展示项目不仅关注数字孪生，也关注Physical AI在真实硬件上的运行。",
-    youtube_open: "在YouTube上观看实体机器人视频",
-    youtube_note: "由于YouTube设置限制，页面内嵌播放不可用，请在新标签页打开。",
+      "HIME是由本研究室开发的机器人平台，融合了我们在AI智能体、自主导航和实体机器人系统方面的研究。",
+    lab_video_caption: "研究室开发的AI智能体机器人“HIME”介绍视频。",
     card_real2sim_title: "Real-to-Sim",
     card_real2sim_text: "将真实工业空间、物体、尺寸和布局转换为可用于仿真的资产。",
     card_agents_title: "AI原生工业系统",
@@ -409,12 +436,27 @@ const translations = {
     team_ehime: "理工学研究科 计算机系统研究室",
     team_taiyo: "产业合作与机器人应用现场支持",
     team_mirabot: "机器人技术合作与Physical AI实现支持",
+    team_leadership_title: "项目负责人",
+    team_photo_caption: "参加ITC-CSCC 2026的研究团队。",
+    team_researchers_title: "学生研究成员",
     bio_wang_role: "项目负责人 / 计算机系统",
     bio_wang_text:
       "王森岭博士获得九州工业大学博士学位。他的研究基础涵盖计算机系统、可信计算、LSI测试与诊断、可重构计算和芯片可靠性。在本项目中，他从计算机系统视角主导数字孪生、Physical AI和工业机器人智能的一体化研究。",
     bio_takahashi_role: "项目主任 / 计算机系统",
     bio_takahashi_text:
       "高桥宽教授获得爱媛大学工学博士学位。他长期从事计算机系统设计与测试、VLSI测试、容错计算和可信计算研究。作为项目主任，他为可靠计算机系统研究与数字孪生驱动的工业机器人之间的连接提供资深学术领导。",
+    member_li_role: "嵌入式系统 / Real-to-Sim",
+    member_li_bio:
+      "Kerun Li现为爱媛大学大学院理工学研究科硕士二年级学生，专长为嵌入式系统开发。在本项目中，他开展机器人SLAM与导航、计算机视觉、生成式AI以及基于Real-to-Sim的三维场景重建研究。作为单张照片Real-to-Sim流程论文的第一作者，他研究将真实观测转换为可复用三维资产和物理合理仿真场景的方法。他已取得2项实用新型、2项外观设计注册和1项软件著作权，另有1项发明专利申请正在审查中。本科期间，他曾获评浙江省优秀毕业生并获得浙江省政府奖学金。",
+    member_kuzuhara_role: "网络安全 / 形式化验证",
+    member_kuzuhara_bio:
+      "Tomoki Kuzuhara现为爱媛大学大学院理工学研究科硕士二年级学生，专长为网络安全。在本项目中，他负责Prime Agent的实现与验证，并构建工业现场知识库。作为Env2FSA论文的第一作者，他研究视觉语义落地、与PDDL一致的符号环境建模，以及基于反例引导的机器人行为控制器形式化验证。",
+    member_ono_role: "图像处理 / 环境建模",
+    member_ono_bio:
+      "Shintaro Ono现为爱媛大学大学院理工学研究科硕士二年级学生，专长为图像处理。在本项目中，他开展真实环境静态空间模型生成、模拟仪表数字化和现场变化检测研究。作为室内重建方法比较研究论文的第一作者，他评估从LiDAR点云生成可用于仿真的静态几何模型的BEV、Heightmap和平面方法。",
+    member_shen_role: "规划优化 / 多机器人系统",
+    member_shen_bio:
+      "Jingjing Shen现为爱媛大学大学院理工学研究科硕士二年级学生，专长为规划优化。在本项目中，她负责行为规划智能体的设计与验证。作为语言驱动异构多机器人规划论文的第一作者，她研究自然语言任务分解、能力约束下的团队构成与任务分配、结构化经验记忆，以及基于执行反馈的计划修复。",
     link_researchmap: "researchmap",
     link_google_scholar: "Google Scholar",
     link_kaken: "KAKEN",
