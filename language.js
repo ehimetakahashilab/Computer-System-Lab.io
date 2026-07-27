@@ -67,6 +67,11 @@ const translations = {
     agents_subtitle: "Reliable planning instead of raw LLM control",
     agents_body:
       "The Prime Agent integrates natural-language task understanding with PDDL planning, PPLTL temporal logic, DAG parallelization, and model checking. The goal is not just to generate plans, but to verify that robot behavior satisfies task goals and industrial rules before execution.",
+    agents_showcase_kicker: "Showcase · From natural language to coordinated execution",
+    agents_showcase_title: "Prime Agent plans a two-object transport task for multiple robots",
+    agents_showcase_body:
+      "The user asks: “Move the mug to Box 1 and the cheese to Box 2.” The Prime Agent interprets the request, decomposes it into object-specific subtasks, assigns them to robot agents, and coordinates their execution in simulation.",
+    agents_showcase_figcap: "Prime-Agent multi-robot task planning for transporting a mug to Box 1 and cheese to Box 2.",
     sim2real_kicker: "Pillar 03 · Sim-to-Real",
     sim2real_title: "Deploying validated intelligence to real and simulated robot bodies",
     sim2real_intro:
@@ -228,6 +233,11 @@ const translations = {
     agents_subtitle: "LLM単独制御ではなく、信頼できる計画へ",
     agents_body:
       "Prime Agentは自然言語理解、PDDL計画、PPLTL時相論理、DAG並列化、モデル検査を統合します。目的は計画を生成するだけでなく、実行前にタスク目標と産業現場のルールを満たすことを検証することです。",
+    agents_showcase_kicker: "SHOWCASE · 自然言語から協調実行へ",
+    agents_showcase_title: "Prime Agentによる複数ロボットの搬送タスク計画",
+    agents_showcase_body:
+      "「マグカップをボックス1、チーズをボックス2まで搬送してください」という指示をPrime Agentが解釈し、対象物ごとのサブタスクに分解して各ロボットへ割り当て、シミュレーション上で協調実行します。",
+    agents_showcase_figcap: "Showcase: マグカップをBox 1、チーズをBox 2へ搬送する複数ロボットのタスク計画。",
     sim2real_kicker: "第3の柱 · Sim-to-Real",
     sim2real_title: "検証済み知能を仮想ロボットと実機ロボットへ展開する",
     sim2real_intro:
@@ -388,6 +398,11 @@ const translations = {
     agents_subtitle: "不是直接用LLM控制，而是构建可信任务规划",
     agents_body:
       "Prime Agent整合自然语言理解、PDDL规划、PPLTL时序逻辑、DAG并行化和模型检查。目标不仅是生成计划，更是在执行前验证机器人行为满足任务目标和工业规则。",
+    agents_showcase_kicker: "SHOWCASE · 从自然语言到协同执行",
+    agents_showcase_title: "Prime Agent为多机器人规划双物体搬运任务",
+    agents_showcase_body:
+      "用户提出“请将马克杯搬运到Box 1，将奶酪搬运到Box 2”。Prime Agent理解该指令，将其分解为面向不同物体的子任务，分配给各机器人，并在仿真环境中协调执行。",
+    agents_showcase_figcap: "Showcase: 多机器人协同执行将马克杯搬运到Box 1、将奶酪搬运到Box 2的任务计划。",
     sim2real_kicker: "支柱03 · Sim-to-Real",
     sim2real_title: "将已验证的智能部署到仿真和实体机器人",
     sim2real_intro:

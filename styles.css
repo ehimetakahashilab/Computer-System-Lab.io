@@ -548,6 +548,10 @@ h3 {
   align-items: center;
 }
 
+.agent-showcase {
+  margin-top: 42px;
+}
+
 .reverse-feature {
   grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.05fr);
 }
