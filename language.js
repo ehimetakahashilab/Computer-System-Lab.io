@@ -141,6 +141,9 @@ const translations = {
     member_shen_role: "Planning Optimization / Multi-Robot Systems",
     member_shen_bio:
       "Jingjing Shen is a second-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in planning optimization. She designs and validates action-planning agents. As first author of the team's language-driven heterogeneous multi-robot planning framework, she studies natural-language task decomposition, capability-aware team formation and allocation, structured experience memory, and feedback-driven plan repair.",
+    member_mizuki_role: "Robot Autonomy / Slave Agent",
+    member_mizuki_bio:
+      "Mizuki Takahashi is a first-year master's student in the Graduate School of Science and Engineering at Ehime University, specializing in autonomous mobility and manipulation control for AI robots. He develops the Slave Agent that grounds tasks issued by the Prime Agent in the physical world, integrating Unitree Go2 locomotion, SLAM-based localization and mapping, and robot-arm grasping and transport. His next work will integrate SO-101 Arm and back-mounted arm configurations with Go2 for handover and delivery tasks, while fine-tuning Vision-Language-Action models for robot manipulation conditioned on visual observations and language instructions.",
     link_researchmap: "researchmap",
     link_google_scholar: "Google Scholar",
     link_kaken: "KAKEN",
@@ -350,6 +353,9 @@ const translations = {
     member_shen_role: "プランニング最適化 / 複数ロボット",
     member_shen_bio:
       "Jingjing Shenは、愛媛大学大学院理工学研究科博士前期課程2年に在籍し、プランニング最適化を専門としています。本プロジェクトでは、行為プランニングエージェントの設計と検証を担当しています。言語駆動型の異種複数ロボット計画に関する論文の筆頭著者として、自然言語タスク分解、能力制約を考慮したチーム編成・タスク割当、構造化経験メモリ、実行フィードバックに基づく計画修復を研究しています。",
+    member_mizuki_role: "ロボット自律制御 / Slave Agent",
+    member_mizuki_bio:
+      "Mizuki Takahashiは、愛媛大学大学院理工学研究科博士前期課程1年に在籍し、AIロボットの自律移動と操作制御を専門としています。本プロジェクトでは、Prime Agentが生成したタスクを実環境で遂行するSlave Agentを担当し、Unitree Go2の歩行制御、SLAMによる自己位置推定・地図生成、ロボットアームによる把持・運搬機能の統合に取り組んでいます。今後は、SO-101 Armや背面アームを搭載したGo2による荷物の受け渡し・運搬タスクを設計し、Vision-Language-Action（VLA）モデルのファインチューニングを通じて、視覚情報と言語指示に基づくロボット操作の実現を目指します。",
     link_researchmap: "researchmap",
     link_google_scholar: "Google Scholar",
     link_kaken: "KAKEN",
@@ -558,6 +564,9 @@ const translations = {
     member_shen_role: "规划优化 / 多机器人系统",
     member_shen_bio:
       "Jingjing Shen现为爱媛大学大学院理工学研究科硕士二年级学生，专长为规划优化。在本项目中，她负责行为规划智能体的设计与验证。作为语言驱动异构多机器人规划论文的第一作者，她研究自然语言任务分解、能力约束下的团队构成与任务分配、结构化经验记忆，以及基于执行反馈的计划修复。",
+    member_mizuki_role: "机器人自主控制 / Slave Agent",
+    member_mizuki_bio:
+      "Mizuki Takahashi现为爱媛大学大学院理工学研究科硕士一年级学生，专长为AI机器人的自主移动与操作控制。在本项目中，他负责将Prime Agent生成的任务落实到真实环境中的Slave Agent，集成Unitree Go2行走控制、基于SLAM的定位与建图，以及机械臂抓取和搬运功能。下一阶段，他将设计搭载SO-101 Arm或背部机械臂的Go2交接与搬运任务，并通过微调Vision-Language-Action（VLA）模型，实现基于视觉信息和语言指令的机器人操作。",
     link_researchmap: "researchmap",
     link_google_scholar: "Google Scholar",
     link_kaken: "KAKEN",
