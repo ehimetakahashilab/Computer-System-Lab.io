@@ -163,7 +163,48 @@ const translations = {
     videos_lead:
       "A curated public subset of demonstrations from the project. Internal progress recordings and unfinished development clips are intentionally omitted from this page.",
     videos_note:
-      "Some MOV files may not play in every browser. Use the direct file link below each player if playback fails."
+      "Some MOV files may not play in every browser. Use the direct file link below each player if playback fails.",
+    videos_hime_series_kicker: "HIME Showcase · 28 July 2026",
+    videos_hime_series_title: "AI agent capabilities demonstrated on a physical robot",
+    videos_hime_series_lead:
+      "Eleven clips trace five scenarios from natural-language instruction and agent output to generated web applications and physical execution on HIME.",
+    videos_hime_tag: "HIME demonstration · 2026/7/28",
+    video_open_file: "Open video file",
+    videos_archive_kicker: "Project Video Archive",
+    videos_archive_title: "Additional demonstrations",
+    videos_hime_rps_agent_title: "Rock-paper-scissors instruction and agent output",
+    videos_hime_rps_agent_text:
+      "Agent workflow produced from the instruction: “Use the camera to play rock-paper-scissors and guide the session by voice.”",
+    videos_hime_rps_live_title: "Rock-paper-scissors with HIME",
+    videos_hime_rps_live_text:
+      "HIME recognizes a participant's hand gesture through its camera and guides the game by voice.",
+    videos_hime_search_agent_title: "Object search instruction and agent output",
+    videos_hime_search_agent_text:
+      "The agent combines camera-image analysis and walking-command tools to plan how to find a specified object.",
+    videos_hime_search_live_title: "HIME searches for a ball",
+    videos_hime_search_live_text:
+      "HIME navigates the laboratory, analyzes camera images, and searches for the specified ball.",
+    videos_hime_patrol_agent_title: "Autonomous patrol app generation: agent output",
+    videos_hime_patrol_agent_text:
+      "From a natural-language request, the agent generates a patrol application that incorporates the Go2 control API.",
+    videos_hime_patrol_web_title: "AI-generated patrol web app",
+    videos_hime_patrol_web_text:
+      "The generated interface integrates camera video, robot pose and state, and patrol controls.",
+    videos_hime_patrol_live_title: "Patrol app running on HIME",
+    videos_hime_patrol_live_text:
+      "The AI-generated web application controls HIME during a physical patrol demonstration.",
+    videos_hime_rps_app_agent_title: "Rock-paper-scissors app generation: agent output",
+    videos_hime_rps_app_agent_text:
+      "The agent builds an application for playing rock-paper-scissors through the Go2 camera.",
+    videos_hime_rps_app_web_title: "AI-generated rock-paper-scissors web app",
+    videos_hime_rps_app_web_text:
+      "The interface combines camera video, hand-pose recognition, scorekeeping, and agent dialogue.",
+    videos_hime_collab_agent_title: "Human-robot collaboration: agent output",
+    videos_hime_collab_agent_text:
+      "For a transport task from point A to point B, the agent plans collaboration according to robot and human capabilities.",
+    videos_hime_collab_live_title: "HIME requests human assistance",
+    videos_hime_collab_live_text:
+      "When HIME cannot grasp an object, it asks a nearby person for help and continues the transport task."
   },
   ja: {
     nav_overview: "概要",
@@ -329,7 +370,48 @@ const translations = {
     videos_lead:
       "プロジェクトのデモ動画のうち、公開に適したものだけを掲載しています。内部進捗報告用や未完成の開発動画は、このページから意図的に除外しています。",
     videos_note:
-      "一部のMOVファイルはブラウザによって再生できない場合があります。再生できない場合は各カードの直接リンクを開いてください。"
+      "一部のMOVファイルはブラウザによって再生できない場合があります。再生できない場合は各カードの直接リンクを開いてください。",
+    videos_hime_series_kicker: "HIME SHOWCASE · 2026年7月28日",
+    videos_hime_series_title: "実機ロボットで示すAIエージェント能力",
+    videos_hime_series_lead:
+      "5つのシナリオを、自然言語指示とエージェント出力から、生成Webアプリ、HIMEによる実機実行まで11本の動画で紹介します。",
+    videos_hime_tag: "HIMEデモ · 2026/7/28",
+    video_open_file: "動画ファイルを開く",
+    videos_archive_kicker: "プロジェクト動画アーカイブ",
+    videos_archive_title: "その他の公開デモ",
+    videos_hime_rps_agent_title: "じゃんけん：指示とエージェント出力",
+    videos_hime_rps_agent_text:
+      "「カメラを通してじゃんけんし、音声で進行する」という自然言語指示から生成されたエージェント処理を示します。",
+    videos_hime_rps_live_title: "HIMEとのじゃんけん",
+    videos_hime_rps_live_text:
+      "HIMEが参加者の手の形をカメラで認識し、音声でゲームを進行する実機デモです。",
+    videos_hime_search_agent_title: "物体探索：指示とエージェント出力",
+    videos_hime_search_agent_text:
+      "「これを探して」という指示を受け、カメラ画像解析ツールと歩行指令ツールを組み合わせて探索計画を生成します。",
+    videos_hime_search_live_title: "HIMEによるボール探索",
+    videos_hime_search_live_text:
+      "HIMEが実環境を移動しながらカメラ画像を解析し、指定されたボールを探索する実機デモです。",
+    videos_hime_patrol_agent_title: "巡回監視アプリ生成：エージェント出力",
+    videos_hime_patrol_agent_text:
+      "「巡回監視を行うアプリを作成して」という指示から、Go2制御APIを組み込んだアプリを生成する過程です。",
+    videos_hime_patrol_web_title: "AI生成の巡回監視Webアプリ",
+    videos_hime_patrol_web_text:
+      "カメラ映像、位置・姿勢、状態表示、巡回操作を統合したWebアプリの画面です。",
+    videos_hime_patrol_live_title: "HIMEで動作する巡回監視アプリ",
+    videos_hime_patrol_live_text:
+      "AIが生成したWebアプリからHIMEを操作し、実際に巡回監視を行う様子です。",
+    videos_hime_rps_app_agent_title: "じゃんけんアプリ生成：エージェント出力",
+    videos_hime_rps_app_agent_text:
+      "「Go2のカメラを通してじゃんけんできるアプリを作成して」という指示からアプリを生成します。",
+    videos_hime_rps_app_web_title: "AI生成のじゃんけんWebアプリ",
+    videos_hime_rps_app_web_text:
+      "カメラ画像、手姿勢認識、勝敗スコア、対話表示を統合したじゃんけんアプリです。",
+    videos_hime_collab_agent_title: "人との協働作業：エージェント出力",
+    videos_hime_collab_agent_text:
+      "「A地点のゴミをB地点まで運ぶ」という指示に対し、ロボットと人の能力を考慮した協働計画を生成します。",
+    videos_hime_collab_live_title: "HIMEが人へ協力を依頼する搬送デモ",
+    videos_hime_collab_live_text:
+      "HIMEが把持できない物体について近くの人へ協力を依頼し、搬送タスクを継続する実機デモです。"
   },
   zh: {
     nav_overview: "概览",
@@ -494,7 +576,48 @@ const translations = {
     videos_lead:
       "本页只展示适合公开发布的项目演示视频。内部进展汇报和未完成开发片段已被有意排除。",
     videos_note:
-      "部分MOV文件可能无法在某些浏览器中播放。若播放失败，请使用每个卡片下方的直接文件链接。"
+      "部分MOV文件可能无法在某些浏览器中播放。若播放失败，请使用每个卡片下方的直接文件链接。",
+    videos_hime_series_kicker: "HIME SHOWCASE · 2026年7月28日",
+    videos_hime_series_title: "在实体机器人上展示AI智能体能力",
+    videos_hime_series_lead:
+      "通过11段视频展示5个场景，从自然语言指令和智能体输出，到生成式Web应用以及HIME实体执行。",
+    videos_hime_tag: "HIME演示 · 2026/7/28",
+    video_open_file: "打开视频文件",
+    videos_archive_kicker: "项目视频档案",
+    videos_archive_title: "其他公开演示",
+    videos_hime_rps_agent_title: "猜拳：指令与智能体输出",
+    videos_hime_rps_agent_text:
+      "展示根据“通过摄像头玩猜拳，并用语音主持游戏”的自然语言指令生成的智能体工作流程。",
+    videos_hime_rps_live_title: "与HIME进行猜拳",
+    videos_hime_rps_live_text:
+      "HIME通过摄像头识别参与者的手势，并用语音推进游戏。",
+    videos_hime_search_agent_title: "物体搜索：指令与智能体输出",
+    videos_hime_search_agent_text:
+      "智能体结合摄像头图像分析工具和行走指令工具，规划指定物体的搜索过程。",
+    videos_hime_search_live_title: "HIME搜索球体",
+    videos_hime_search_live_text:
+      "HIME在实验室中移动、分析摄像头图像并搜索指定的球。",
+    videos_hime_patrol_agent_title: "巡回监视应用生成：智能体输出",
+    videos_hime_patrol_agent_text:
+      "智能体根据自然语言要求，生成集成Go2控制API的巡回监视应用。",
+    videos_hime_patrol_web_title: "AI生成的巡回监视Web应用",
+    videos_hime_patrol_web_text:
+      "生成的界面整合摄像头视频、机器人位姿与状态以及巡回操作。",
+    videos_hime_patrol_live_title: "在HIME上运行巡回监视应用",
+    videos_hime_patrol_live_text:
+      "AI生成的Web应用在实体巡回演示中控制HIME。",
+    videos_hime_rps_app_agent_title: "猜拳应用生成：智能体输出",
+    videos_hime_rps_app_agent_text:
+      "智能体生成一个通过Go2摄像头进行猜拳的应用。",
+    videos_hime_rps_app_web_title: "AI生成的猜拳Web应用",
+    videos_hime_rps_app_web_text:
+      "界面整合摄像头画面、手势识别、比分记录和智能体对话。",
+    videos_hime_collab_agent_title: "人机协作：智能体输出",
+    videos_hime_collab_agent_text:
+      "针对从A点到B点的搬运任务，智能体根据机器人和人的能力生成协作计划。",
+    videos_hime_collab_live_title: "HIME请求人类协助",
+    videos_hime_collab_live_text:
+      "当HIME无法抓取物体时，会请求附近人员帮助并继续执行搬运任务。"
   }
 };
 

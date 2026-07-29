@@ -1020,6 +1020,28 @@ footer p {
   color: var(--ink);
 }
 
+.video-series {
+  padding-top: 18px;
+}
+
+.video-series-header {
+  margin-bottom: 28px;
+}
+
+.video-series-header h2 {
+  max-width: 900px;
+  font-size: 38px;
+}
+
+.video-series-header .lead {
+  max-width: 920px;
+}
+
+.video-archive-header {
+  grid-column: 1 / -1;
+  margin-bottom: 4px;
+}
+
 .media-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
