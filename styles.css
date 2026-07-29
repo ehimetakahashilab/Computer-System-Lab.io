@@ -997,6 +997,34 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.callout .contact-details {
+  margin: 28px auto 30px;
+}
+
+.callout .contact-person {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.callout .contact-person strong {
+  display: inline-block;
+}
+
+.contact-emails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+
+.contact-emails a {
+  color: #fff;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  text-underline-offset: 4px;
+}
+
 footer {
   padding: 30px 24px;
   border-top: 1px solid var(--line);

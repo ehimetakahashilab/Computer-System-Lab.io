@@ -157,6 +157,8 @@ const translations = {
     contact_title: "Open for research collaboration",
     contact_text:
       "We are looking for partners interested in industrial digital twins, AI-native factory systems, field robotics, multi-robot planning, sim-to-real validation, and physical-virtual interaction.",
+    contact_person_label: "Project contact",
+    contact_person_name: "Senling Wang (王 森レイ)",
     contact_button: "Contact the lab",
     videos_kicker: "Research Media Index",
     videos_title: "Videos",
@@ -364,6 +366,8 @@ const translations = {
     contact_title: "共同研究を歓迎します",
     contact_text:
       "産業デジタルツイン、AIネイティブ工場、フィールドロボティクス、複数ロボット計画、Sim-to-Real検証、物理・仮想インタラクションに関心のあるパートナーを歓迎します。",
+    contact_person_label: "研究担当者",
+    contact_person_name: "王 森レイ（Senling Wang）",
     contact_button: "研究室へ連絡",
     videos_kicker: "研究動画インデックス",
     videos_title: "動画",
@@ -570,6 +574,8 @@ const translations = {
     contact_title: "欢迎合作研究",
     contact_text:
       "我们欢迎对工业数字孪生、AI原生工厂、现场机器人、多机器人规划、Sim-to-Real验证和物理虚拟交互感兴趣的合作伙伴。",
+    contact_person_label: "研究联系人",
+    contact_person_name: "王 森レイ（Senling Wang）",
     contact_button: "联系研究室",
     videos_kicker: "研究视频索引",
     videos_title: "视频",
