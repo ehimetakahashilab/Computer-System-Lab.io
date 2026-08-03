@@ -8,7 +8,7 @@ const translations = {
     nav_papers: "Papers",
     nav_reach: "Reach",
     nav_videos: "Videos",
-    hero_eyebrow: "Ehime University Computer Science Lab · Mirabot",
+    hero_eyebrow: "Ehime University Computer Science Lab · Taiyo Yuden · Mirabot",
     hero_title: "Closing the Industrial Physical AI Gap with Digital Twins",
     hero_subtitle:
       "Industrial robots still struggle with changing factories, unsafe trial-and-error, and hard-to-verify AI plans. We position digital twins as the training, verification, and feedback layer for AI-native industrial robot systems.",
@@ -118,6 +118,7 @@ const translations = {
     team_lead:
       "The project is led by Ehime University researchers and developed with industrial partners who bring robot deployment context, field requirements, and implementation support.",
     team_ehime: "Computer Science Lab, Graduate School of Science and Engineering",
+    team_taiyo: "Industrial collaboration and robot-related deployment context",
     team_mirabot: "Robotics collaboration and physical AI implementation support",
     team_leadership_title: "Project leadership",
     team_photo_caption: "Our research team at ITC-CSCC 2026.",
@@ -219,7 +220,7 @@ const translations = {
     nav_papers: "論文",
     nav_reach: "アクセス",
     nav_videos: "動画",
-    hero_eyebrow: "愛媛大学 計算機システム研究室 · ミラボット",
+    hero_eyebrow: "愛媛大学 計算機システム研究室 · 太陽誘電 · ミラボット",
     hero_title: "デジタルツインで産業用Physical AIのギャップを埋める",
     hero_subtitle:
       "変化し続ける現場、安全に試行錯誤できない制約、検証しにくいAI計画。私たちはデジタルツインを、AIネイティブ産業ロボットの訓練・検証・フィードバック基盤として位置付けています。",
@@ -329,6 +330,7 @@ const translations = {
     team_lead:
       "本プロジェクトは愛媛大学の研究者が主導し、実装現場の文脈、現場要求、ロボティクス実装支援を提供する産業パートナーと共同で推進しています。",
     team_ehime: "大学院理工学研究科 計算機システム研究室",
+    team_taiyo: "産業連携とロボット活用現場の文脈提供",
     team_mirabot: "ロボティクス連携とPhysical AI実装支援",
     team_leadership_title: "プロジェクトリーダー",
     team_photo_caption: "ITC-CSCC 2026に参加した研究チーム。",
@@ -430,7 +432,7 @@ const translations = {
     nav_papers: "论文",
     nav_reach: "访问统计",
     nav_videos: "视频",
-    hero_eyebrow: "爱媛大学计算机系统研究室 · Mirabot",
+    hero_eyebrow: "爱媛大学计算机系统研究室 · 太阳诱电 · Mirabot",
     hero_title: "用数字孪生弥合工业Physical AI落地鸿沟",
     hero_subtitle:
       "工业机器人仍然面临现场变化快、无法安全试错、AI计划难以验证等问题。本研究将数字孪生定位为AI原生工业机器人系统的训练、验证和反馈层。",
@@ -539,6 +541,7 @@ const translations = {
     team_lead:
       "本项目由爱媛大学研究人员主导，并与提供机器人部署场景、现场需求和实现支持的产业伙伴共同推进。",
     team_ehime: "理工学研究科 计算机系统研究室",
+    team_taiyo: "产业合作与机器人应用现场支持",
     team_mirabot: "机器人技术合作与Physical AI实现支持",
     team_leadership_title: "项目负责人",
     team_photo_caption: "参加ITC-CSCC 2026的研究团队。",
