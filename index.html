@@ -10,6 +10,7 @@
     />
     <link rel="canonical" href="https://ehimetakahashilab.github.io/Computer-System-Lab.io/" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./progress.css" />
   </head>
   <body>
     <header class="site-header">
@@ -52,11 +53,18 @@
       </section>
 
       <section class="paper-strip" aria-label="Project links">
+        <a data-i18n="updates_nav" href="#research-updates">Latest progress</a>
         <a href="#publications" aria-label="Paper list" data-i18n="strip_paper">Paper</a>
-        <a href="#" aria-label="Slides link placeholder">Slides</a>
-        <a href="#" aria-label="Code link placeholder">Code</a>
-        <a href="#" aria-label="Dataset link placeholder">Dataset</a>
         <a href="./videos.html" aria-label="Video index" data-i18n="strip_video">Video</a>
+      </section>
+
+      <section id="research-updates" class="section research-updates" aria-labelledby="updates-title">
+        <p data-i18n="updates_kicker" class="section-kicker">Research update · October 2026</p>
+        <h2 data-i18n="updates_title" id="updates-title">Connecting perception, planning, and robot execution</h2>
+        <p data-i18n="updates_intro" class="lead">We are bringing the four research pillars together through shared scene information and simulation tests. Recent work advances individual components; end-to-end industrial validation remains a research goal.</p>
+        <p data-i18n="updates_date" class="progress-date">Updated 14 October 2026 · Research evidence through 6 October 2026</p>
+        <nav class="progress-links" aria-label="Recent research progress"><a data-i18n="updates_r2s" href="#progress-r2s">Multi-frame 3D object reconstruction</a><a data-i18n="updates_agents" href="#progress-agents">Scene knowledge for Prime Agent</a><a data-i18n="updates_s2r" href="#progress-sim">Navigation and deployment preparation</a><a data-i18n="updates_interaction" href="#progress-interaction">Persistent object-state management</a></nav>
+        <p data-i18n="updates_scope" class="muted">Published results, prototype tests, and next steps are identified separately below.</p>
       </section>
 
       <section id="overview" class="section overview-section">
@@ -172,6 +180,27 @@
           </p>
         </div>
 
+
+        <article class="research-progress" id="progress-r2s" aria-labelledby="progress-r2s-title">
+          <div class="progress-copy">
+            <p data-i18n="progress_oct" class="progress-date">Progress through 6 October 2026</p>
+            <h3 data-i18n="r2s_update_title" id="progress-r2s-title">Tracking the same object across frames</h3>
+            <p data-i18n="r2s_update_body">We combine video segmentation, ODIN point clouds and camera poses, cross-frame object association, and 3D bounding-box estimation. This addresses duplicated detections and orientation errors that affect object placement in a reconstructed scene.</p>
+            <dl class="progress-findings">
+              <dt data-i18n="progress_observed">What we have tested</dt>
+              <dd data-i18n="r2s_update_result">In a simple real-world test scene, the reconstructed boxes showed stable positions, dimensions, and orientations. This is a qualitative prototype result; a new quantitative accuracy benchmark has not yet been reported.</dd>
+              <dt data-i18n="progress_next">Next validation</dt>
+              <dd data-i18n="r2s_update_next">Evaluate clutter, occlusion, missing points, and generalization to more complex environments.</dd>
+            </dl>
+
+          </div>
+          <figure class="progress-figure">
+            <a href="./assets/progress-2026-10/multi-frame-3d-object-bounds.jpeg" target="_blank" rel="noopener">
+              <img src="./assets/progress-2026-10/multi-frame-3d-object-bounds.jpeg" alt="Prototype result: 3D bounding boxes overlaid on a measured point cloud. Simple-scene experiment, October 2026." loading="lazy" decoding="async" />
+            </a>
+            <figcaption data-i18n="r2s_update_caption">Prototype result: 3D bounding boxes overlaid on a measured point cloud. Simple-scene experiment, October 2026.</figcaption>
+          </figure>
+        </article>
         <div class="feature-grid">
           <figure class="media-frame">
             <img src="./assets/overview-real-to-sim.gif" alt="Animated Real-to-Sim modeling workflow" />
@@ -188,7 +217,7 @@
               <li data-i18n="real2sim_li1">86 object instances across 9 categories evaluated for scale accuracy</li>
               <li data-i18n="real2sim_li2">Mean scale error: 11.96% in the single-image baseline</li>
               <li data-i18n="real2sim_li3">50 placement trials achieved 100% spatial-relation and collision-free success</li>
-              <li data-i18n="real2sim_li4">Current pipeline handles 166 models with dimension correction and physical-attribute generation</li>
+              <li data-i18n="real2sim_li4">July prototype: 166 models in the dimension-correction and attribute-generation workflow</li>
             </ul>
           </div>
         </div>
@@ -217,6 +246,27 @@
           </p>
         </div>
 
+
+        <article class="research-progress" id="progress-agents" aria-labelledby="progress-agents-title">
+          <div class="progress-copy">
+            <p data-i18n="progress_oct" class="progress-date">Progress through 6 October 2026</p>
+            <h3 data-i18n="agents_update_title" id="progress-agents-title">Giving the planner access to scene knowledge</h3>
+            <p data-i18n="agents_update_body">We implemented an API server and MCP tools for generating and retrieving DAAAM scene graphs. An AI agent queried coordinates and spatial relationships from sensor data collected in an Isaac Sim warehouse.</p>
+            <dl class="progress-findings">
+              <dt data-i18n="progress_observed">What we have tested</dt>
+              <dd data-i18n="agents_update_result">The current access test covers background scene elements. Foreground-object search and robot-trajectory queries still need further work. A separate test environment now contains two AGVs and two robot arms; the object pickup-position issue was corrected.</dd>
+              <dt data-i18n="progress_next">Next validation</dt>
+              <dd data-i18n="agents_update_next">Connect scene-graph queries to Prime Agent task planning and evaluate replanning, task success, execution time, and rule compliance.</dd>
+            </dl>
+            <h4 data-i18n="agents_app_title">Inspection management and agent tools</h4><p data-i18n="agents_app_text">The prototype management app supports robot connection, manual control, waypoint images, alerts, scheduled agent execution, and chat. A two-robot waypoint inspection was demonstrated in simulation. Comparative performance and real-site evaluation are still pending.</p>
+          </div>
+          <figure class="progress-figure">
+            <a href="./assets/progress-2026-10/heterogeneous-agv-arm-simulation.png" target="_blank" rel="noopener">
+              <img src="./assets/progress-2026-10/heterogeneous-agv-arm-simulation.png" alt="Two AGVs and two robot arms in Isaac Sim. This is an evaluation environment, not a completed real-world transport deployment." loading="lazy" decoding="async" />
+            </a>
+            <figcaption data-i18n="agents_update_caption">Two AGVs and two robot arms in Isaac Sim. This is an evaluation environment, not a completed real-world transport deployment.</figcaption>
+          </figure>
+        </article>
         <div class="agent-layout">
           <div class="agent-diagram" aria-label="Prime and Slave Agent architecture">
             <div class="agent-node prime">Prime Agent<br /><span>Task planning · Scheduling · Verification</span></div>
@@ -238,10 +288,11 @@
               DAG parallelization, and model checking. The goal is not just to generate plans, but to verify that robot
               behavior satisfies task goals and industrial rules before execution.
             </p>
+            <h4 data-i18n="prior_benchmark">Earlier evaluation · VirtualHome</h4><p data-i18n="prior_benchmark_scope" class="muted">These figures describe the earlier evaluated tasks, not the October warehouse prototype or real-factory safety.</p>
             <div class="mini-metrics">
-              <article><strong>82.5%</strong><span>PPLTL conversion accuracy with DB retrieval</span></article>
-              <article><strong>90%</strong><span>End-to-end success in VirtualHome evaluation</span></article>
-              <article><strong>0</strong><span>rule violations in the proposed method evaluation</span></article>
+              <article><strong>82.5%</strong><span data-i18n="prior_ppltl">PPLTL conversion accuracy with database retrieval</span></article>
+              <article><strong>90%</strong><span data-i18n="prior_e2e">End-to-end success in the evaluated VirtualHome tasks</span></article>
+              <article><strong>0</strong><span data-i18n="prior_rules">Observed rule violations in the evaluated task set</span></article>
             </div>
           </div>
         </div>
@@ -283,23 +334,40 @@
           </p>
         </div>
 
+
+        <article class="research-progress" id="progress-sim" aria-labelledby="progress-sim-title">
+          <div class="progress-copy">
+            <p data-i18n="progress_sep" class="progress-date">September 2026 progress review</p>
+            <h3 data-i18n="sim_update_title" id="progress-sim-title">Building the sensor and control foundation</h3>
+            <p data-i18n="sim_update_body">We designed and fabricated a shared mount for Odin1 and MID-360. The intended division of work is localization from Odin1 and obstacle point clouds from MID-360. Go2 navigation, showroom mapping, and robot-arm connectivity have also been exercised in the development environment.</p>
+            <dl class="progress-findings">
+              <dt data-i18n="progress_observed">What we have tested</dt>
+              <dd data-i18n="sim_update_result">An initial vision-language-action inference test produced actions that do not match Go2 velocity commands. Model adaptation and the control interface remain under development; autonomous VLA control of Go2 is not yet demonstrated.</dd>
+              <dt data-i18n="progress_next">Next validation</dt>
+              <dd data-i18n="sim_update_next">Validate sensor calibration and navigation, adapt the VLA action interface, and evaluate the integrated Slave Agent on physical robots.</dd>
+            </dl>
+
+          </div>
+          <figure class="progress-figure">
+            <a href="./assets/progress-2026-10/odin-mid360-sensor-mount.png" target="_blank" rel="noopener">
+              <img src="./assets/progress-2026-10/odin-mid360-sensor-mount.png" alt="CAD design for the Odin1 and MID-360 sensor mount. The September review also documents fabrication of the mount." loading="lazy" decoding="async" />
+            </a>
+            <figcaption data-i18n="sim_update_caption">CAD design for the Odin1 and MID-360 sensor mount. The September review also documents fabrication of the mount.</figcaption>
+          </figure>
+        </article>
         <div class="feature-grid reverse-feature">
           <figure class="media-frame">
             <img src="./assets/field-robot-demo.gif" alt="Field robot demo in industrial environment" />
             <figcaption data-i18n="sim2real_figcap">Physical robot operation and field-oriented inspection scenarios.</figcaption>
           </figure>
           <div class="feature-copy">
-            <h3 data-i18n="sim2real_subtitle">From simulation task execution to field-ready robot modules</h3>
-            <p data-i18n="sim2real_body">
-              The system already includes Go2 navigation, map/route visualization, waypoint management, scheduled
-              inspection tasks, image acquisition in Isaac Sim, robot-arm introduction, Rviz connection, and showroom
-              model import into Isaac Lab.
-            </p>
+            <h3 data-i18n="sim2real_subtitle">Navigation and manipulation modules for deployment</h3>
+            <p data-i18n="sim2real_body">We have tested Go2 navigation, map and waypoint handling, robot-arm import and connectivity, and showroom simulation. The current work connects these modules to agent tools and prepares integrated physical-robot evaluation.</p>
             <ul class="check-list">
-              <li>Go2 + Nav2 navigation and coordinate-based movement verification</li>
-              <li>Inspection task scheduling and execution through the management application</li>
-              <li>SO-101 robot arm import, Rviz connection, and joint motion testing</li>
-              <li>Boiler-room and showroom digital-twin environments for integrated validation</li>
+              <li data-i18n="sim_li1">Go2 navigation and coordinate-based movement tests</li>
+              <li data-i18n="sim_li2">Inspection scheduling and execution in the management prototype</li>
+              <li data-i18n="sim_li3">SO-101 arm import, RViz connection, and joint-motion testing</li>
+              <li data-i18n="sim_li4">Showroom simulation and mapping for integrated validation</li>
             </ul>
           </div>
         </div>
@@ -311,24 +379,38 @@
             <div class="section-kicker" data-i18n="interaction_kicker">Pillar 04 · Physical-Virtual Interaction</div>
             <h2 data-i18n="interaction_title">Closing the loop from field sensing back to the digital twin</h2>
           </div>
-          <p data-i18n="interaction_intro">
-            The final layer is Sim-to-Real-to-Sim: physical robots sense changes in the field, update object poses or
-            generate new assets, and allow the Prime Agent to replan using the refreshed virtual environment.
-          </p>
+          <p data-i18n="interaction_intro">Our goal is a Sim-to-Real-to-Sim loop: sense field changes, update object state and the virtual environment, and replan robot tasks using that refreshed information.</p>
         </div>
 
+
+        <article class="research-progress" id="progress-interaction" aria-labelledby="progress-interaction-title">
+          <div class="progress-copy">
+            <p data-i18n="progress_oct" class="progress-date">Progress through 6 October 2026</p>
+            <h3 data-i18n="interaction_update_title" id="progress-interaction-title">Keeping object identity through environmental changes</h3>
+            <p data-i18n="interaction_update_body">We implemented a state-management prototype for new, moved, temporarily unobserved, missing, and rediscovered objects. It preserves identity and history and exports scene_state.json with schema validation.</p>
+            <dl class="progress-findings">
+              <dt data-i18n="progress_observed">What we have tested</dt>
+              <dd data-i18n="interaction_update_result">All five state-transition test cases passed in the prototype. DAAAM and Hydra were also run on CODa data to inspect available object fields. This is component-level verification; continuous sensor-to-USD synchronization is still being integrated.</dd>
+              <dt data-i18n="progress_next">Next validation</dt>
+              <dd data-i18n="interaction_update_next">Complete the observation adapter, coordinate alignment, and USD updates, then verify a sensing-to-replanning loop.</dd>
+            </dl>
+            <h4 data-i18n="interaction_inspection_title">Testing inspection and anomaly feedback</h4><p data-i18n="interaction_inspection_text">We added incident simulation and a ROS 2 trigger for fire events in Isaac Sim. Meter-reading studies compare numeric values and units on four images; this small exploratory set does not establish general accuracy. Linking readings to inspection reports and the management app is planned.</p>
+          </div>
+          <figure class="progress-figure">
+            <a href="./assets/progress-2026-10/warehouse-scene-graph.png" target="_blank" rel="noopener">
+              <img src="./assets/progress-2026-10/warehouse-scene-graph.png" alt="Scene graph generated from Isaac Sim warehouse observations. The current example mainly represents background structures." loading="lazy" decoding="async" />
+            </a>
+            <figcaption data-i18n="interaction_update_caption">Scene graph generated from Isaac Sim warehouse observations. The current example mainly represents background structures.</figcaption>
+          </figure>
+        </article>
         <div class="feature-grid">
           <figure class="media-frame">
             <img src="./assets/physical-virtual-loop.gif" alt="Sim-to-real-to-sim interaction workflow" />
-            <figcaption data-i18n="interaction_figcap">Field changes are detected, localized, and incrementally reflected into Isaac Sim.</figcaption>
+            <figcaption data-i18n="interaction_figcap">Target architecture for sensing, localization, incremental scene updates, and replanning.</figcaption>
           </figure>
           <div class="feature-copy">
             <h3 data-i18n="interaction_subtitle">Incremental updates instead of rebuilding the whole scene</h3>
-            <p data-i18n="interaction_body">
-              The current design distinguishes moved, new, and disappeared objects. Moved objects update pose only;
-              new objects trigger measurement, 3D generation or retrieval, and USD insertion; updated scenes are
-              checked for collisions, overlaps, and blocked paths.
-            </p>
+            <p data-i18n="interaction_body">The architecture separates static geometry from changing object states. We are implementing persistent identities and observation histories before connecting these updates to USD scenes and robot replanning.</p>
             <div class="pipeline">
               <span>Sense</span>
               <span>Localize</span>
@@ -341,28 +423,28 @@
       </section>
 
       <section id="evidence" class="section results-section">
-        <div class="section-kicker" data-i18n="evidence_kicker">Integrated Evidence</div>
-        <h2 data-i18n="evidence_title">Progress across modeling, intelligence, deployment, and interaction</h2>
+        <div class="section-kicker" data-i18n="evidence_kicker">Evidence and maturity</div>
+        <h2 data-i18n="evidence_title">Measured scope, with the next tests made explicit</h2>
         <div class="metrics">
           <article>
             <strong>4</strong>
-            <span data-i18n="metric_pillars_label">integrated pillars</span>
-            <p data-i18n="metric_pillars_text">Real-to-Sim, AI-native agent system, Sim-to-Real, and Physical-Virtual interaction.</p>
+            <span data-i18n="metric_pillars_label">published conference papers</span>
+            <p data-i18n="metric_pillars_text">ITC-CSCC 2026: indoor reconstruction, Real-to-Sim, multi-robot planning, and environment modeling for verification.</p>
           </article>
           <article>
-            <strong>166</strong>
-            <span data-i18n="metric_models_label">model workflow scale</span>
-            <p data-i18n="metric_models_text">Odin1-based processing flow for recognition, measurement, 3D generation, correction, and attributes.</p>
+            <strong>2 + 2</strong>
+            <span data-i18n="metric_models_label">AGVs + robot arms</span>
+            <p data-i18n="metric_models_text">The heterogeneous simulation testbed contains two of each. Integrated planning performance is yet to be evaluated.</p>
           </article>
           <article>
-            <strong>90%</strong>
-            <span data-i18n="metric_prime_label">Prime Agent E2E success</span>
-            <p data-i18n="metric_prime_text">Formal-planning pipeline improved over the LLM-only baseline in evaluated tasks.</p>
+            <strong>5</strong>
+            <span data-i18n="metric_prime_label">object-state test cases</span>
+            <p data-i18n="metric_prime_text">Five transition cases passed in the state-management prototype. This is not an end-to-end field success rate.</p>
           </article>
           <article>
             <strong>2</strong>
-            <span data-i18n="metric_go2_label">Go2 robots in simulation</span>
-            <p data-i18n="metric_go2_text">Multi-robot navigation execution has been checked in Isaac Sim as the next integration target.</p>
+            <span data-i18n="metric_go2_label">robots in inspection demo</span>
+            <p data-i18n="metric_go2_text">Waypoint inspection was demonstrated in Isaac Sim. Real-site success, time, and safety evaluation remain next steps.</p>
           </article>
         </div>
       </section>
@@ -370,10 +452,7 @@
       <section id="publications" class="section publications-section">
         <div class="section-kicker" data-i18n="pub_kicker">Publications</div>
         <h2 data-i18n="pub_title">Conference papers from the project</h2>
-        <p class="lead" data-i18n="pub_lead">
-          The paper folder contains peer-facing outputs covering indoor reconstruction, Real-to-Sim asset generation,
-          heterogeneous multi-robot task planning, and symbolic environment modeling for verification.
-        </p>
+        <p class="lead" data-i18n="pub_lead">Four papers were presented at ITC-CSCC 2026, covering indoor reconstruction, Real-to-Sim asset generation, heterogeneous multi-robot task planning, and symbolic environment modeling for verification.</p>
         <div class="paper-list">
           <article>
             <h3>Comparative Analysis of Indoor Reconstruction Methods for Digital Twin Generation</h3>
@@ -409,13 +488,13 @@
           </article>
           <article>
             <time>2026</time>
-            <h3 data-i18n="roadmap_2026_title">Domain implementation</h3>
-            <p data-i18n="roadmap_2026_text">Shipyard and boiler-room digital twins, Prime/Slave agent training, management app integration, and field sensing for sim-real feedback.</p>
+            <h3 data-i18n="roadmap_2026_title">Prototype integration and evaluation</h3>
+            <p data-i18n="roadmap_2026_text">Multi-frame reconstruction, scene-graph access, inspection management, and object-state prototypes are progressing. Integrated evaluation in simulation and on physical robots is the next milestone.</p>
           </article>
           <article>
             <time>2027</time>
-            <h3 data-i18n="roadmap_2027_title">Operational validation</h3>
-            <p data-i18n="roadmap_2027_text">Multi-robot inspection, delivery, anomaly reporting, and digital-twin-driven replanning in real industrial sites.</p>
+            <h3 data-i18n="roadmap_2027_title">Planned operational validation</h3>
+            <p data-i18n="roadmap_2027_text">The longer-term goal is multi-robot inspection, transport, anomaly reporting, and digital-twin-based replanning at industrial sites.</p>
           </article>
         </div>
       </section>
