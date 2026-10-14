@@ -1,455 +1,9 @@
-﻿<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Digital Twin Physical AI Robotics | Ehime University</title>
-    <meta
-      name="description"
-      content="A digital-twin-centered Physical AI robotics platform for AI-native industrial systems, real-to-sim modeling, multi-agent robot planning, sim-to-real deployment, and physical-virtual interaction."
-    />
-    <link rel="canonical" href="https://ehimetakahashilab.github.io/Computer-System-Lab.io/" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./progress.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top">Digital Twin Physical AI</a>
-      <nav aria-label="Primary navigation">
-        <a href="#overview" data-i18n="nav_overview">Overview</a>
-        <a href="#real2sim" data-i18n="nav_real2sim">Real-to-Sim</a>
-        <a href="#agents" data-i18n="nav_agents">AI Agents</a>
-        <a href="#sim2real" data-i18n="nav_sim2real">Sim-to-Real</a>
-        <a href="#interaction" data-i18n="nav_interaction">Interaction</a>
-        <a href="#publications" data-i18n="nav_papers">Papers</a>
-        <a href="#reach" data-i18n="nav_reach">Reach</a>
-        <a href="./videos.html" data-i18n="nav_videos">Videos</a>
-      </nav>
-      <div class="language-switch" aria-label="Language selector">
-        <button type="button" data-lang="en">EN</button>
-        <button type="button" data-lang="ja">日本語</button>
-        <button type="button" data-lang="zh">中文</button>
-      </div>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-bg" src="./assets/ai-native-factory_2.png" alt="Simulation-ready industrial digital twin environment" />
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow" data-i18n="hero_eyebrow">Ehime University Computer Science Lab · Taiyo Yuden · Mirabot</p>
-          <h1 id="hero-title" data-i18n="hero_title">Closing the Industrial Physical AI Gap with Digital Twins</h1>
-          <p class="hero-subtitle" data-i18n="hero_subtitle">
-            Industrial robots still struggle with changing factories, unsafe trial-and-error, and hard-to-verify AI
-            plans. We position digital twins as the training, verification, and feedback layer for AI-native industrial
-            robot systems.
-          </p>
-          <div class="hero-actions" aria-label="Project highlights">
-            <a class="button primary" href="#overview" data-i18n="hero_cta_platform">Explore the platform</a>
-            <a class="button" href="./videos.html" data-i18n="hero_cta_video">Watch videos</a>
-            <a class="button ghost" href="#contact" data-i18n="hero_cta_collab">Collaborate</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="paper-strip" aria-label="Project links">
-        <a data-i18n="updates_nav" href="#research-updates">Latest progress</a>
-        <a href="#publications" aria-label="Paper list" data-i18n="strip_paper">Paper</a>
-        <a href="./videos.html" aria-label="Video index" data-i18n="strip_video">Video</a>
-      </section>
-
-      <section id="research-updates" class="section research-updates" aria-labelledby="updates-title">
-        <p data-i18n="updates_kicker" class="section-kicker">Research update · October 2026</p>
-        <h2 data-i18n="updates_title" id="updates-title">Connecting perception, planning, and robot execution</h2>
-        <p data-i18n="updates_intro" class="lead">We are bringing the four research pillars together through shared scene information and simulation tests. Recent work advances individual components; end-to-end industrial validation remains a research goal.</p>
-        <p data-i18n="updates_date" class="progress-date">Updated 14 October 2026 · Research evidence through 6 October 2026</p>
-        <nav class="progress-links" aria-label="Recent research progress"><a data-i18n="updates_r2s" href="#progress-r2s">Multi-frame 3D object reconstruction</a><a data-i18n="updates_agents" href="#progress-agents">Scene knowledge for Prime Agent</a><a data-i18n="updates_s2r" href="#progress-sim">Navigation and deployment preparation</a><a data-i18n="updates_interaction" href="#progress-interaction">Persistent object-state management</a></nav>
-        <p data-i18n="updates_scope" class="muted">Published results, prototype tests, and next steps are identified separately below.</p>
-      </section>
-
-      <section id="overview" class="section overview-section">
-        <div class="section-kicker" data-i18n="overview_kicker">Research Overview</div>
-        <h2 data-i18n="overview_title">Making industrial robots learn safely before they act</h2>
-        <p class="lead" data-i18n="overview_lead">
-          We target factories, shipyards, boiler rooms, and inspection sites where robot testing is expensive, risky,
-          and environment-specific. The project builds a closed-loop Physical AI platform that models the site,
-          verifies multi-robot plans, deploys to real robots, and feeds field changes back into simulation.
-        </p>
-
-        <div class="mission-grid" aria-label="Research problem, position, and goal">
-          <article>
-            <span data-i18n="mission_problem_label">Problem</span>
-            <h3 data-i18n="mission_problem_title">Industrial AI cannot rely on trial-and-error in the field</h3>
-            <p data-i18n="mission_problem_text">
-              Real sites change, robot failures are costly, and pure LLM control is difficult to verify before
-              deployment.
-            </p>
-          </article>
-          <article>
-            <span data-i18n="mission_position_label">Position</span>
-            <h3 data-i18n="mission_position_title">Digital twins become the operating layer for Physical AI</h3>
-            <p data-i18n="mission_position_text">
-              Real-to-Sim, Prime/Slave agents, Sim-to-Real, and Sim-to-Real-to-Sim are treated as one industrial robot
-              intelligence loop.
-            </p>
-          </article>
-          <article>
-            <span data-i18n="mission_goal_label">Goal</span>
-            <h3 data-i18n="mission_goal_title">Verified autonomy for AI-native industrial robot systems</h3>
-            <p data-i18n="mission_goal_text">
-              The goal is to let robots understand work sites, plan safely, execute tasks, and continuously update the
-              digital twin from field evidence.
-            </p>
-          </article>
-        </div>
-
-        <div id="hime" class="spotlight-video">
-          <div>
-            <div class="section-kicker" data-i18n="lab_video_kicker">Lab Robot Showcase</div>
-            <h3 data-i18n="lab_video_title">HIME: an AI agent robot from Ehime University</h3>
-            <p data-i18n="lab_video_text">
-              HIME brings our work on AI agents, autonomous navigation, and physical robot systems together in a
-              laboratory-developed platform.
-            </p>
-          </div>
-          <figure class="spotlight-media">
-            <video controls preload="metadata" playsinline>
-              <source src="./videos/hime-ai-agent-robot-showcase.mp4" type="video/mp4" />
-              Your browser does not support embedded video playback.
-            </video>
-            <figcaption data-i18n="lab_video_caption">Introducing HIME, our laboratory-developed AI agent robot.</figcaption>
-          </figure>
-        </div>
-
-        <div class="overview-media-grid">
-          <article class="overview-card">
-            <div class="overview-media">
-              <img src="./assets/overview-real-to-sim.gif" alt="Real-to-Sim modeling workflow" />
-            </div>
-            <div>
-              <span class="index">01</span>
-              <h3 data-i18n="card_real2sim_title">Real-to-Sim</h3>
-              <p data-i18n="card_real2sim_text">Convert real industrial spaces, objects, dimensions, and layouts into simulation-ready assets.</p>
-            </div>
-          </article>
-
-          <article class="overview-card">
-            <div class="overview-media">
-              <img class="contain-media" src="./videos/2026-07-21_two_go2_multi_robot_navigation.gif" alt="Two Go2 robots navigating in Isaac Sim" />
-            </div>
-            <div>
-              <span class="index">02</span>
-              <h3 data-i18n="card_agents_title">AI-Native Industrial System</h3>
-              <p data-i18n="card_agents_text">Use Prime Agent and Slave Agent architecture to plan, schedule, verify, and execute robot tasks.</p>
-            </div>
-          </article>
-
-          <article class="overview-card">
-            <div class="overview-media">
-              <img class="contain-media" src="./videos/2026-07-21_showroom_3d_model_in_isaaclab.gif" alt="Showroom 3D model imported into Isaac Lab" />
-            </div>
-            <div>
-              <span class="index">03</span>
-              <h3 data-i18n="card_sim2real_title">Sim-to-Real</h3>
-              <p data-i18n="card_sim2real_text">Train and validate navigation, inspection, and manipulation behavior before physical deployment.</p>
-            </div>
-          </article>
-
-          <article class="overview-card">
-            <div class="overview-media">
-              <img src="./assets/physical-virtual-loop.gif" alt="Physical virtual interaction loop" />
-            </div>
-            <div>
-              <span class="index">04</span>
-              <h3 data-i18n="card_interaction_title">Sim-to-Real-to-Sim</h3>
-              <p data-i18n="card_interaction_text">Sense field changes, evaluate robot behavior, and incrementally update the virtual environment.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="real2sim" class="section pillar-section">
-        <div class="pillar-heading">
-          <div>
-            <div class="section-kicker" data-i18n="real2sim_kicker">Pillar 01 · Real-to-Sim</div>
-            <h2 data-i18n="real2sim_title">Generating simulation-ready industrial environments from real-world data</h2>
-          </div>
-          <p data-i18n="real2sim_intro">
-            The Real-to-Sim stream builds reusable digital-twin assets: static spaces, object-level 3D models,
-            physical attributes, scale correction, and automatic layout generation.
-          </p>
-        </div>
-
-
-        <article class="research-progress" id="progress-r2s" aria-labelledby="progress-r2s-title">
-          <div class="progress-copy">
-            <p data-i18n="progress_oct" class="progress-date">Progress through 6 October 2026</p>
-            <h3 data-i18n="r2s_update_title" id="progress-r2s-title">Tracking the same object across frames</h3>
-            <p data-i18n="r2s_update_body">We combine video segmentation, ODIN point clouds and camera poses, cross-frame object association, and 3D bounding-box estimation. This addresses duplicated detections and orientation errors that affect object placement in a reconstructed scene.</p>
-            <dl class="progress-findings">
-              <dt data-i18n="progress_observed">What we have tested</dt>
-              <dd data-i18n="r2s_update_result">In a simple real-world test scene, the reconstructed boxes showed stable positions, dimensions, and orientations. This is a qualitative prototype result; a new quantitative accuracy benchmark has not yet been reported.</dd>
-              <dt data-i18n="progress_next">Next validation</dt>
-              <dd data-i18n="r2s_update_next">Evaluate clutter, occlusion, missing points, and generalization to more complex environments.</dd>
-            </dl>
-
-          </div>
-          <figure class="progress-figure">
-            <a href="./assets/progress-2026-10/multi-frame-3d-object-bounds.jpeg" target="_blank" rel="noopener">
-              <img src="./assets/progress-2026-10/multi-frame-3d-object-bounds.jpeg" alt="Prototype result: 3D bounding boxes overlaid on a measured point cloud. Simple-scene experiment, October 2026." loading="lazy" decoding="async" />
-            </a>
-            <figcaption data-i18n="r2s_update_caption">Prototype result: 3D bounding boxes overlaid on a measured point cloud. Simple-scene experiment, October 2026.</figcaption>
-          </figure>
-        </article>
-        <div class="feature-grid">
-          <figure class="media-frame">
-            <img src="./assets/overview-real-to-sim.gif" alt="Animated Real-to-Sim modeling workflow" />
-            <figcaption data-i18n="real2sim_figcap">Animated Real-to-Sim workflow for turning real-world data into simulation assets.</figcaption>
-          </figure>
-          <div class="feature-copy">
-            <h3 data-i18n="real2sim_subtitle">From single-image initialization to multi-sensor metric reconstruction</h3>
-            <p data-i18n="real2sim_body">
-              Our published ITC-CSCC 2026 work converts a single photograph into reusable 3D assets and an initial
-              layout. We are extending the pipeline to Odin1 LiDAR + RGB + IMU, moving from dimension estimation to
-              measured scale constraints.
-            </p>
-            <ul class="check-list">
-              <li data-i18n="real2sim_li1">86 object instances across 9 categories evaluated for scale accuracy</li>
-              <li data-i18n="real2sim_li2">Mean scale error: 11.96% in the single-image baseline</li>
-              <li data-i18n="real2sim_li3">50 placement trials achieved 100% spatial-relation and collision-free success</li>
-              <li data-i18n="real2sim_li4">July prototype: 166 models in the dimension-correction and attribute-generation workflow</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="image-pair">
-          <figure class="media-frame">
-            <img class="contain-media" src="./videos/2026-07-21_real_to_sim_modeling_stability_case_1.gif" alt="Real-to-Sim modeling stability test case 1" />
-            <figcaption data-i18n="scale_figcap">Real-to-Sim modeling stability test: generated objects compared with the real scene.</figcaption>
-          </figure>
-          <figure class="media-frame">
-            <img class="contain-media" src="./videos/2026-07-21_real_to_sim_modeling_stability_case_1 (2).gif" alt="Real-to-Sim modeling stability test case 2" />
-            <figcaption data-i18n="odin_figcap">Second Real-to-Sim stability test showing virtual reconstruction consistency.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="agents" class="section pillar-section soft-band">
-        <div class="pillar-heading">
-          <div>
-            <div class="section-kicker" data-i18n="agents_kicker">Pillar 02 · Prime Agent / Slave Agent</div>
-            <h2 data-i18n="agents_title">AI-native intelligent industrial systems for multi-robot work</h2>
-          </div>
-          <p data-i18n="agents_intro">
-            The industrial system uses a Prime Agent for global task planning, resource assignment, scheduling, and
-            formal verification, while Slave Agents execute robot-local navigation, sensing, and manipulation.
-          </p>
-        </div>
-
-
-        <article class="research-progress" id="progress-agents" aria-labelledby="progress-agents-title">
-          <div class="progress-copy">
-            <p data-i18n="progress_oct" class="progress-date">Progress through 6 October 2026</p>
-            <h3 data-i18n="agents_update_title" id="progress-agents-title">Giving the planner access to scene knowledge</h3>
-            <p data-i18n="agents_update_body">We implemented an API server and MCP tools for generating and retrieving DAAAM scene graphs. An AI agent queried coordinates and spatial relationships from sensor data collected in an Isaac Sim warehouse.</p>
-            <dl class="progress-findings">
-              <dt data-i18n="progress_observed">What we have tested</dt>
-              <dd data-i18n="agents_update_result">The current access test covers background scene elements. Foreground-object search and robot-trajectory queries still need further work. A separate test environment now contains two AGVs and two robot arms; the object pickup-position issue was corrected.</dd>
-              <dt data-i18n="progress_next">Next validation</dt>
-              <dd data-i18n="agents_update_next">Connect scene-graph queries to Prime Agent task planning and evaluate replanning, task success, execution time, and rule compliance.</dd>
-            </dl>
-            <h4 data-i18n="agents_app_title">Inspection management and agent tools</h4><p data-i18n="agents_app_text">The prototype management app supports robot connection, manual control, waypoint images, alerts, scheduled agent execution, and chat. A two-robot waypoint inspection was demonstrated in simulation. Comparative performance and real-site evaluation are still pending.</p>
-          </div>
-          <figure class="progress-figure">
-            <a href="./assets/progress-2026-10/heterogeneous-agv-arm-simulation.png" target="_blank" rel="noopener">
-              <img src="./assets/progress-2026-10/heterogeneous-agv-arm-simulation.png" alt="Two AGVs and two robot arms in Isaac Sim. This is an evaluation environment, not a completed real-world transport deployment." loading="lazy" decoding="async" />
-            </a>
-            <figcaption data-i18n="agents_update_caption">Two AGVs and two robot arms in Isaac Sim. This is an evaluation environment, not a completed real-world transport deployment.</figcaption>
-          </figure>
-        </article>
-        <div class="agent-layout">
-          <div class="agent-diagram" aria-label="Prime and Slave Agent architecture">
-            <div class="agent-node prime">Prime Agent<br /><span>Task planning · Scheduling · Verification</span></div>
-            <div class="agent-links">
-              <span>Task list</span>
-              <span>Action plans</span>
-              <span>Robot assignment</span>
-            </div>
-            <div class="slave-row">
-              <div class="agent-node">Slave Agent<br /><span>Go2 navigation</span></div>
-              <div class="agent-node">Slave Agent<br /><span>Robot arm / VLA</span></div>
-              <div class="agent-node">Slave Agent<br /><span>Inspection sensing</span></div>
-            </div>
-          </div>
-          <div class="feature-copy">
-            <h3 data-i18n="agents_subtitle">Reliable planning instead of raw LLM control</h3>
-            <p data-i18n="agents_body">
-              The Prime Agent integrates natural-language task understanding with PDDL planning, PPLTL temporal logic,
-              DAG parallelization, and model checking. The goal is not just to generate plans, but to verify that robot
-              behavior satisfies task goals and industrial rules before execution.
-            </p>
-            <h4 data-i18n="prior_benchmark">Earlier evaluation · VirtualHome</h4><p data-i18n="prior_benchmark_scope" class="muted">These figures describe the earlier evaluated tasks, not the October warehouse prototype or real-factory safety.</p>
-            <div class="mini-metrics">
-              <article><strong>82.5%</strong><span data-i18n="prior_ppltl">PPLTL conversion accuracy with database retrieval</span></article>
-              <article><strong>90%</strong><span data-i18n="prior_e2e">End-to-end success in the evaluated VirtualHome tasks</span></article>
-              <article><strong>0</strong><span data-i18n="prior_rules">Observed rule violations in the evaluated task set</span></article>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-grid agent-showcase">
-          <figure class="media-frame">
-            <img
-              class="contain-media"
-              src="./videos/prime agentによるマルチロボットのタスク計画(マグカップをボックス1、チーズをボックス2まで搬送してください).gif"
-              alt="Prime Agent planning a coordinated transport task for multiple robots"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption data-i18n="agents_showcase_figcap">
-              Prime-Agent multi-robot task planning for transporting a mug to Box 1 and cheese to Box 2.
-            </figcaption>
-          </figure>
-          <div class="feature-copy">
-            <div class="section-kicker" data-i18n="agents_showcase_kicker">Showcase · From natural language to coordinated execution</div>
-            <h3 data-i18n="agents_showcase_title">Prime Agent plans a two-object transport task for multiple robots</h3>
-            <p data-i18n="agents_showcase_body">
-              The user asks: “Move the mug to Box 1 and the cheese to Box 2.” The Prime Agent interprets the request,
-              decomposes it into object-specific subtasks, assigns them to robot agents, and coordinates their execution
-              in simulation.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="sim2real" class="section pillar-section">
-        <div class="pillar-heading">
-          <div>
-            <div class="section-kicker" data-i18n="sim2real_kicker">Pillar 03 · Sim-to-Real</div>
-            <h2 data-i18n="sim2real_title">Deploying validated intelligence to real and simulated robot bodies</h2>
-          </div>
-          <p data-i18n="sim2real_intro">
-            Sim-to-Real connects trained and verified behaviors to Go2, robot arms, sensors, ROS 2/Nav2, Jetson edge
-            computing, and inspection-management software.
-          </p>
-        </div>
-
-
-        <article class="research-progress" id="progress-sim" aria-labelledby="progress-sim-title">
-          <div class="progress-copy">
-            <p data-i18n="progress_sep" class="progress-date">September 2026 progress review</p>
-            <h3 data-i18n="sim_update_title" id="progress-sim-title">Building the sensor and control foundation</h3>
-            <p data-i18n="sim_update_body">We designed and fabricated a shared mount for Odin1 and MID-360. The intended division of work is localization from Odin1 and obstacle point clouds from MID-360. Go2 navigation, showroom mapping, and robot-arm connectivity have also been exercised in the development environment.</p>
-            <dl class="progress-findings">
-              <dt data-i18n="progress_observed">What we have tested</dt>
-              <dd data-i18n="sim_update_result">An initial vision-language-action inference test produced actions that do not match Go2 velocity commands. Model adaptation and the control interface remain under development; autonomous VLA control of Go2 is not yet demonstrated.</dd>
-              <dt data-i18n="progress_next">Next validation</dt>
-              <dd data-i18n="sim_update_next">Validate sensor calibration and navigation, adapt the VLA action interface, and evaluate the integrated Slave Agent on physical robots.</dd>
-            </dl>
-
-          </div>
-          <figure class="progress-figure">
-            <a href="./assets/progress-2026-10/odin-mid360-sensor-mount.png" target="_blank" rel="noopener">
-              <img src="./assets/progress-2026-10/odin-mid360-sensor-mount.png" alt="CAD design for the Odin1 and MID-360 sensor mount. The September review also documents fabrication of the mount." loading="lazy" decoding="async" />
-            </a>
-            <figcaption data-i18n="sim_update_caption">CAD design for the Odin1 and MID-360 sensor mount. The September review also documents fabrication of the mount.</figcaption>
-          </figure>
-        </article>
-        <div class="feature-grid reverse-feature">
-          <figure class="media-frame">
-            <img src="./assets/field-robot-demo.gif" alt="Field robot demo in industrial environment" />
-            <figcaption data-i18n="sim2real_figcap">Physical robot operation and field-oriented inspection scenarios.</figcaption>
-          </figure>
-          <div class="feature-copy">
-            <h3 data-i18n="sim2real_subtitle">Navigation and manipulation modules for deployment</h3>
-            <p data-i18n="sim2real_body">We have tested Go2 navigation, map and waypoint handling, robot-arm import and connectivity, and showroom simulation. The current work connects these modules to agent tools and prepares integrated physical-robot evaluation.</p>
-            <ul class="check-list">
-              <li data-i18n="sim_li1">Go2 navigation and coordinate-based movement tests</li>
-              <li data-i18n="sim_li2">Inspection scheduling and execution in the management prototype</li>
-              <li data-i18n="sim_li3">SO-101 arm import, RViz connection, and joint-motion testing</li>
-              <li data-i18n="sim_li4">Showroom simulation and mapping for integrated validation</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="interaction" class="section pillar-section soft-band">
-        <div class="pillar-heading">
-          <div>
-            <div class="section-kicker" data-i18n="interaction_kicker">Pillar 04 · Physical-Virtual Interaction</div>
-            <h2 data-i18n="interaction_title">Closing the loop from field sensing back to the digital twin</h2>
-          </div>
-          <p data-i18n="interaction_intro">Our goal is a Sim-to-Real-to-Sim loop: sense field changes, update object state and the virtual environment, and replan robot tasks using that refreshed information.</p>
-        </div>
-
-
-        <article class="research-progress" id="progress-interaction" aria-labelledby="progress-interaction-title">
-          <div class="progress-copy">
-            <p data-i18n="progress_oct" class="progress-date">Progress through 6 October 2026</p>
-            <h3 data-i18n="interaction_update_title" id="progress-interaction-title">Keeping object identity through environmental changes</h3>
-            <p data-i18n="interaction_update_body">We implemented a state-management prototype for new, moved, temporarily unobserved, missing, and rediscovered objects. It preserves identity and history and exports scene_state.json with schema validation.</p>
-            <dl class="progress-findings">
-              <dt data-i18n="progress_observed">What we have tested</dt>
-              <dd data-i18n="interaction_update_result">All five state-transition test cases passed in the prototype. DAAAM and Hydra were also run on CODa data to inspect available object fields. This is component-level verification; continuous sensor-to-USD synchronization is still being integrated.</dd>
-              <dt data-i18n="progress_next">Next validation</dt>
-              <dd data-i18n="interaction_update_next">Complete the observation adapter, coordinate alignment, and USD updates, then verify a sensing-to-replanning loop.</dd>
-            </dl>
-            <h4 data-i18n="interaction_inspection_title">Testing inspection and anomaly feedback</h4><p data-i18n="interaction_inspection_text">We added incident simulation and a ROS 2 trigger for fire events in Isaac Sim. Meter-reading studies compare numeric values and units on four images; this small exploratory set does not establish general accuracy. Linking readings to inspection reports and the management app is planned.</p>
-          </div>
-          <figure class="progress-figure">
-            <a href="./assets/progress-2026-10/warehouse-scene-graph.png" target="_blank" rel="noopener">
-              <img src="./assets/progress-2026-10/warehouse-scene-graph.png" alt="Scene graph generated from Isaac Sim warehouse observations. The current example mainly represents background structures." loading="lazy" decoding="async" />
-            </a>
-            <figcaption data-i18n="interaction_update_caption">Scene graph generated from Isaac Sim warehouse observations. The current example mainly represents background structures.</figcaption>
-          </figure>
-        </article>
-        <div class="feature-grid">
-          <figure class="media-frame">
-            <img src="./assets/physical-virtual-loop.gif" alt="Sim-to-real-to-sim interaction workflow" />
-            <figcaption data-i18n="interaction_figcap">Target architecture for sensing, localization, incremental scene updates, and replanning.</figcaption>
-          </figure>
-          <div class="feature-copy">
-            <h3 data-i18n="interaction_subtitle">Incremental updates instead of rebuilding the whole scene</h3>
-            <p data-i18n="interaction_body">The architecture separates static geometry from changing object states. We are implementing persistent identities and observation histories before connecting these updates to USD scenes and robot replanning.</p>
-            <div class="pipeline">
-              <span>Sense</span>
-              <span>Localize</span>
-              <span>Detect change</span>
-              <span>Update USD</span>
-              <span>Replan</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="evidence" class="section results-section">
-        <div class="section-kicker" data-i18n="evidence_kicker">Evidence and maturity</div>
-        <h2 data-i18n="evidence_title">Measured scope, with the next tests made explicit</h2>
-        <div class="metrics">
-          <article>
-            <strong>4</strong>
-            <span data-i18n="metric_pillars_label">published conference papers</span>
-            <p data-i18n="metric_pillars_text">ITC-CSCC 2026: indoor reconstruction, Real-to-Sim, multi-robot planning, and environment modeling for verification.</p>
-          </article>
-          <article>
-            <strong>2 + 2</strong>
-            <span data-i18n="metric_models_label">AGVs + robot arms</span>
-            <p data-i18n="metric_models_text">The heterogeneous simulation testbed contains two of each. Integrated planning performance is yet to be evaluated.</p>
-          </article>
-          <article>
-            <strong>5</strong>
-            <span data-i18n="metric_prime_label">object-state test cases</span>
-            <p data-i18n="metric_prime_text">Five transition cases passed in the state-management prototype. This is not an end-to-end field success rate.</p>
-          </article>
-          <article>
-            <strong>2</strong>
-            <span data-i18n="metric_go2_label">robots in inspection demo</span>
-            <p data-i18n="metric_go2_text">Waypoint inspection was demonstrated in Isaac Sim. Real-site success, time, and safety evaluation remain next steps.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="publications" class="section publications-section">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Digital Twin Physical AI Robotics | Ehime University</title><meta name="description" content="Ehime University's digital twin and Physical AI robotics research: Real-to-Sim, Prime and Slave Agents, robot deployment, and Physical-Virtual Interaction."><link rel="canonical" href="https://ehimetakahashilab.github.io/Computer-System-Lab.io/"><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./research.css"></head><body><header class="site-header"><a class="brand" href="./index.html">Digital Twin Physical AI<span>EHIME UNIVERSITY</span></a><nav aria-label="Primary navigation"><a href="./index.html#overview" data-i18n="nav_overview">Overview</a><a data-i18n="r_nav_research" href="./index.html#research">Research</a><a data-i18n="r_nav_demos" href="./resources.html">Demos &amp; resources</a><a href="./index.html#publications" data-i18n="nav_papers">Papers</a><a data-i18n="r_nav_team" href="./index.html#team">Team</a></nav><div class="language-switch" aria-label="Language selector"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="zh">中文</button></div></header><main id="top"><section class="project-hero" aria-labelledby="project-title"><img class="project-background" src="./assets/ai-native-factory_2.png" alt="AI-native factory digital twin concept"><div class="project-shade"></div><div class="hero-inner"><p class="hero-org" data-i18n="hero_eyebrow">Ehime University Computer Science Lab · Taiyo Yuden · Mirabot</p><h1 data-i18n="r_project_title" id="project-title">Digital Twin Physical AI Robotics</h1><p data-i18n="r_project_subtitle" class="hero-description">An AI-native industrial robot system that connects real-world observations, task planning, and robot execution through a digital twin.</p><p data-i18n="r_project_goal" class="hero-goal">Our goal: robots that adapt to changing sites, with plans evaluated before deployment and field observations returned to the virtual world.</p><div class="hero-actions"><a data-i18n="r_explore" class="button primary" href="#research">Explore the research</a><a data-i18n="r_watch" class="button" href="./resources.html">Watch demonstrations</a></div></div></section>
+<section id="overview" class="research-inner overview-rebuilt"><span id="research-updates" class="anchor-target"></span><p data-i18n="r_overview_k" class="section-kicker">Research overview</p><h2 data-i18n="r_overview_h">Industrial autonomy built around a changing world</h2><p data-i18n="r_overview_p" class="lead">Industrial sites change as people, equipment, and materials move. Rebuilding a simulator and hand-coding robot behavior for every change makes deployment costly. We study a shared environment model that supports perception, agent planning, and execution across different robot bodies.</p><div class="question-columns"><article><h3 data-i18n="r_problem_h">The deployment problem</h3><p data-i18n="r_problem_p">Site-specific modeling and control are labor-intensive. Unchecked AI-generated plans can fail when geometry, task rules, or robot capabilities differ from the assumed conditions.</p></article><article><h3 data-i18n="r_approach_h">Our systems approach</h3><p data-i18n="r_approach_p">Combine Real-to-Sim modeling, Prime/Slave agents, deployment interfaces, and persistent scene updates. Simulation and formal methods provide testable boundaries around AI-generated behavior.</p></article></div><div id="research" class="research-map"><h2 data-i18n="r_research_h">Four research pillars, one target loop</h2><div class="cycle-nav"><a href="#real2sim"><span class="cycle-index">01</span><strong>Real-to-Sim</strong><span data-i18n="r_cycle1">Model the site</span></a><a href="#agents"><span class="cycle-index">02</span><strong>Prime / Slave Agents</strong><span data-i18n="r_cycle2">Plan and coordinate</span></a><a href="#sim2real"><span class="cycle-index">03</span><strong>Sim-to-Real</strong><span data-i18n="r_cycle3">Execute on robots</span></a><a href="#interaction"><span class="cycle-index">04</span><strong>Physical-Virtual Interaction</strong><span data-i18n="r_cycle4">Observe and update</span></a></div><p data-i18n="r_research_p" class="integration-note">These modules are being integrated. The complete sensing-to-replanning loop has not yet been validated at an industrial site.</p></div><div class="evidence-dateline"><span data-i18n="r_asof">Research evidence through 6 October 2026</span><span data-i18n="r_status_note">The demonstrations below distinguish simulation, physical operation, and component prototypes.</span></div></section>
+<section id="hime" class="hime-band"><div class="research-inner hime-layout"><div><p class="section-kicker">HIME / EHIME UNIVERSITY</p><h2>AI Agent Robot HIME</h2><p data-i18n="r_hime_p">HIME is our laboratory-developed AI agent robot. Its public demonstrations connect natural-language requests and software tools with physical movement, perception, and interaction with people.</p><a data-i18n="r_hime_more" class="text-link" href="./videos.html">HIME scenarios and earlier demonstrations</a></div><figure class="demo-figure"><video controls playsinline preload="none" poster="./resource/hime-showcase.jpg" src="./videos/hime-ai-agent-robot-showcase.mp4" aria-label="HIME AI agent robot showcase"></video><figcaption data-i18n="r_physical">Physical robot demonstration</figcaption></figure></div></section>
+<span id="progress-r2s" class="anchor-target"></span><section id="real2sim" class="research-band pillar-1"><div class="research-inner"><div class="pillar-top"><p class="section-kicker">01 / Real-to-Sim</p><h2 data-i18n="r_p1_h">Real observations into usable simulation scenes</h2></div><div class="pillar-layout"><div class="pillar-copy"><p data-i18n="r_p1_p">We reconstruct static spaces and object assets for robot simulation. The published single-photograph pipeline now informs work on multi-frame association and measured 3D geometry, so that object identity, scale, and orientation can support scene placement.</p><ul class="research-points"><li data-i18n="r_p1_a">Video segmentation, point clouds, and camera poses are combined across observations.</li><li data-i18n="r_p1_b">A simple real scene shows stable 3D boxes qualitatively. A new quantitative accuracy benchmark is still needed.</li><li data-i18n="r_p1_c">Next: clutter, occlusion, missing points, and reliable placement in more complex scenes.</li></ul><a data-i18n="r_more" class="text-link" href="./resources.html#real2sim">Related demonstrations</a></div><figure class="demo-figure"><video controls playsinline preload="none" poster="./resource/real-to-sim-stability-1.jpg" src="./resource/real-to-sim-stability-1.mp4" aria-label="Real-to-Sim reconstruction stability demonstration: the observed scene and reconstructed objects. The multi-frame experiment below is a separate, newer prototype."></video><figcaption data-i18n="r_p1_cap">Real-to-Sim reconstruction stability demonstration: the observed scene and reconstructed objects. The multi-frame experiment below is a separate, newer prototype.</figcaption></figure></div><div class="support-row"><figure><img src="./assets/progress-2026-10/multi-frame-3d-object-bounds.jpeg" alt="Multi-frame reconstruction: measured point cloud and 3D bounding boxes" loading="lazy" decoding="async"></figure><div><h3 data-i18n="r_p1_detail">Multi-frame object reconstruction</h3><p data-i18n="r_p1_detail_p">Measured point clouds and 3D bounding boxes provide a geometric basis for placing generated objects. The image shows a simple-scene experiment, not a completed industrial reconstruction benchmark.</p><a class="text-link" href="./papers/m69484-li stamped-e.pdf">ITC-CSCC 2026 / Real-to-Sim paper</a></div></div></div></section><span id="progress-agents" class="anchor-target"></span><section id="agents" class="research-band pillar-2"><div class="research-inner"><div class="pillar-top"><p class="section-kicker">02 / Prime / Slave Agents</p><h2 data-i18n="r_p2_h">AI-native coordination with Prime and Slave Agents</h2></div><div class="pillar-layout"><div class="pillar-copy"><p data-i18n="r_p2_p">The Prime Agent interprets work requests, assigns capabilities, and plans across robots. Slave Agents connect the plan to navigation, sensing, and manipulation tools. We combine symbolic planning and verification with environment knowledge and execution feedback.</p><ul class="research-points"><li data-i18n="r_p2_a">Two AGVs and two arms form a heterogeneous simulation testbed. The object pickup-position calculation has been corrected.</li><li data-i18n="r_p2_b">API and MCP tools expose scene-graph coordinates and spatial relationships. Current tests mainly cover background structures.</li><li data-i18n="r_p2_c">Next: connect this knowledge to task planning and measure success, duration, and rule compliance.</li></ul><a data-i18n="r_more" class="text-link" href="./resources.html#agents">Related demonstrations</a></div><figure class="demo-figure"><video controls playsinline preload="none" poster="./resource/agv-arm-transfer-corrected.jpg" src="./resource/agv-arm-transfer-corrected.mp4" aria-label="AGV and arm transfer in Isaac Sim after the position fix. This tests simulated object transfer, not physical grasp fidelity or end-to-end planning performance."></video><figcaption data-i18n="r_p2_cap">AGV and arm transfer in Isaac Sim after the position fix. This tests simulated object transfer, not physical grasp fidelity or end-to-end planning performance.</figcaption></figure></div><div class="support-row"><figure class="demo-figure"><video controls playsinline preload="none" poster="./resource/two-robot-waypoint-inspection.jpg" src="./resource/two-robot-waypoint-inspection.mp4" aria-label="Two-robot waypoint inspection"></video><figcaption data-i18n="r_d_patrol">Two-robot waypoint inspection</figcaption></figure><div><h3 data-i18n="r_p2_demo_h">A request becomes a multi-robot inspection</h3><p data-i18n="r_p2_demo_p">In simulation, the request to inspect all waypoints is handled using two robots. The management prototype also includes chat, task scheduling, observation images, and alert records.</p><a data-i18n="r_d_console" class="text-link" href="./resources.html#two-robot-inspection-console">Inspection agent execution log</a><a class="text-link" data-i18n="agents_showcase_title" href="./videos/prime agentによるマルチロボットのタスク計画(マグカップをボックス1、チーズをボックス2まで搬送してください).gif">Prime Agent plans a two-object transport task for multiple robots</a></div></div></div></section><span id="progress-sim" class="anchor-target"></span><section id="sim2real" class="research-band pillar-3"><div class="research-inner"><div class="pillar-top"><p class="section-kicker">03 / Sim-to-Real</p><h2 data-i18n="r_p3_h">Robot interfaces that ground agent plans in action</h2></div><div class="pillar-layout"><div class="pillar-copy"><p data-i18n="r_p3_p">We build the Slave Agent around Go2, ROS 2/Nav2, sensors, and robot-arm interfaces. Physical demonstrations establish individual capabilities, while simulation provides a controlled setting for preparing navigation and manipulation integration.</p><ul class="research-points"><li data-i18n="r_p3_a">Go2 motion, mapping, waypoint handling, and arm connectivity have been tested as development modules.</li><li data-i18n="r_p3_b">An Odin1/MID-360 mount has been designed and fabricated for localization and obstacle sensing. Integrated navigation performance is still to be measured.</li><li data-i18n="r_p3_c">Next: calibration and integrated robot evaluation. VLA output adaptation and fine-tuning remain in development.</li></ul><a data-i18n="r_more" class="text-link" href="./resources.html#sim2real">Related demonstrations</a></div><figure class="demo-figure"><video controls playsinline preload="none" poster="./resource/physical-robot-field-demo.jpg" src="./resource/physical-robot-field-demo.mp4" aria-label="Previously published physical-robot demonstration. It does not establish autonomous VLA control of Go2."></video><figcaption data-i18n="r_p3_cap">Previously published physical-robot demonstration. It does not establish autonomous VLA control of Go2.</figcaption></figure></div><div class="support-row"><figure><img src="./assets/progress-2026-10/odin-mid360-sensor-mount.png" alt="Odin1 and MID-360 sensor mount CAD design" loading="lazy" decoding="async"></figure><div><h3 data-i18n="r_p3_detail">A sensor foundation for the Slave Agent</h3><p data-i18n="r_p3_detail_p">The shared mount brings Odin1 and MID-360 together. We are preparing calibration and a division of sensing roles before integrated field evaluation.</p><a data-i18n="r_d_go2" class="text-link" href="./resources.html#go2-showroom-simulation">Go2 motion in a showroom simulation</a></div></div></div></section><span id="progress-interaction" class="anchor-target"></span><section id="interaction" class="research-band pillar-4"><div class="research-inner"><div class="pillar-top"><p class="section-kicker">04 / Physical-Virtual Interaction</p><h2 data-i18n="r_p4_h">A digital twin that can track change</h2></div><div class="pillar-layout"><div class="pillar-copy"><p data-i18n="r_p4_p">Physical-Virtual Interaction returns observations to the digital twin. We separate static geometry from changing object states, preserve object identity and history, and work toward updating simulation and replanning from that evidence.</p><ul class="research-points"><li data-i18n="r_p4_a">A state-management prototype handles new, moved, unobserved, missing, and rediscovered objects. Five transition tests passed.</li><li data-i18n="r_p4_b">ROS 2 can trigger a fire event in Isaac Sim, creating a repeatable setting for future inspection tests.</li><li data-i18n="r_p4_c">Next: observation adapters, coordinate alignment, and continuous USD updates. The full feedback loop remains under integration.</li></ul><a data-i18n="r_more" class="text-link" href="./resources.html#interaction">Related demonstrations</a></div><figure class="demo-figure"><video controls playsinline preload="none" poster="./resource/ros2-triggered-fire-event.jpg" src="./resource/ros2-triggered-fire-event.mp4" aria-label="ROS 2-triggered incident in Isaac Sim, cropped to the simulation viewport. This shows event generation, not validated anomaly recognition."></video><figcaption data-i18n="r_p4_cap">ROS 2-triggered incident in Isaac Sim, cropped to the simulation viewport. This shows event generation, not validated anomaly recognition.</figcaption></figure></div><div class="support-row"><figure><img src="./assets/progress-2026-10/warehouse-scene-graph.png" alt="Scene graph from simulated warehouse observations" loading="lazy" decoding="async"></figure><div><h3 data-i18n="r_p4_detail">Persistent state meets spatial knowledge</h3><p data-i18n="r_p4_detail_p">DAAAM/Hydra experiments and scene-graph access help define how observations enter the shared model. Current warehouse queries mainly describe background structures; dynamic objects and trajectories still need further integration.</p></div></div></div></section>
+<section id="evidence" class="research-inner evidence-rebuilt"><h2 data-i18n="r_result_h">What the evidence supports</h2><p data-i18n="r_result_p" class="lead">We report component tests and simulation results separately from physical deployment. No overall completion percentage or industrial safety guarantee is claimed.</p><div class="evidence-grid"><article><h3 data-i18n="r_result_1">4 conference papers</h3><p data-i18n="r_result_1p">ITC-CSCC 2026: reconstruction, Real-to-Sim, multi-robot planning, and verification-oriented environment modeling.</p></article><article><h3 data-i18n="r_result_2">2 AGVs + 2 arms</h3><p data-i18n="r_result_2p">Heterogeneous simulation testbed; integrated planner evaluation remains a next step.</p></article><article><h3 data-i18n="r_result_3">5 state-transition tests</h3><p data-i18n="r_result_3p">Passed by the object-state prototype. This is component-level testing, not a field success rate.</p></article></div><div id="roadmap" class="next-milestone"><h3 data-i18n="r_next_h">The next integration milestone</h3><p data-i18n="r_next_p">Demonstrate the complete cycle: observe a changed site, update the shared scene, replan under task constraints, and execute through robot-local agents. Evaluate robustness, task success, time, and rule compliance in simulation before extending physical tests.</p></div></section>
+<section id="publications" class="section publications-section">
         <div class="section-kicker" data-i18n="pub_kicker">Publications</div>
         <h2 data-i18n="pub_title">Conference papers from the project</h2>
         <p class="lead" data-i18n="pub_lead">Four papers were presented at ITC-CSCC 2026, covering indoor reconstruction, Real-to-Sim asset generation, heterogeneous multi-robot task planning, and symbolic environment modeling for verification.</p>
@@ -475,31 +29,7 @@
             <a href="./papers/m70884-kuzuhara stamped-e.pdf">Open PDF</a>
           </article>
         </div>
-      </section>
-
-      <section id="roadmap" class="section roadmap">
-        <div class="section-kicker" data-i18n="roadmap_kicker">2025-2027 Roadmap</div>
-        <h2 data-i18n="roadmap_title">Toward an AI-native intelligent factory</h2>
-        <div class="timeline">
-          <article>
-            <time>2025</time>
-            <h3 data-i18n="roadmap_2025_title">Foundation built</h3>
-            <p data-i18n="roadmap_2025_text">H100/RTX infrastructure, Isaac/Gazebo/Genesis environments, Go2 prototype, SLAM navigation, and initial multi-agent robot control.</p>
-          </article>
-          <article>
-            <time>2026</time>
-            <h3 data-i18n="roadmap_2026_title">Prototype integration and evaluation</h3>
-            <p data-i18n="roadmap_2026_text">Multi-frame reconstruction, scene-graph access, inspection management, and object-state prototypes are progressing. Integrated evaluation in simulation and on physical robots is the next milestone.</p>
-          </article>
-          <article>
-            <time>2027</time>
-            <h3 data-i18n="roadmap_2027_title">Planned operational validation</h3>
-            <p data-i18n="roadmap_2027_text">The longer-term goal is multi-robot inspection, transport, anomaly reporting, and digital-twin-based replanning at industrial sites.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="team" class="section team">
+      </section><section id="team" class="section team">
         <div class="section-kicker" data-i18n="team_kicker">People and Partners</div>
         <h2 data-i18n="team_title">Built by a university lab with industrial deployment partners</h2>
         <p class="lead" data-i18n="team_lead">
@@ -538,13 +68,13 @@
                 <h3>Hiroshi Takahashi</h3>
               </div>
             </div>
-            <p data-i18n="bio_takahashi_text">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="bio_takahashi_text">
               Prof. Hiroshi Takahashi is Vice President of Ehime University, an IEICE Fellow, and Project Director. His
               long-running research covers computer-system design and testing, VLSI fault testing and diagnosis,
               dependable and fault-tolerant computing, reconfigurable logic, and hardware security. In this project, he
               provides academic and systems leadership for integrating reliable computing, formal verification, digital
               twins, and industrial robotics.
-            </p>
+            </p></details>
             <div class="bio-links">
               <a href="https://researchmap.jp/read0171345" target="_blank" rel="noopener" data-i18n="link_researchmap">researchmap</a>
               <a href="https://scholar.google.com/citations?hl=en&user=8PPhZqoAAAAJ" target="_blank" rel="noopener" data-i18n="link_google_scholar">Google Scholar</a>
@@ -559,14 +89,14 @@
                 <h3>Senling Wang</h3>
               </div>
             </div>
-            <p data-i18n="bio_wang_text">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="bio_wang_text">
               Dr. Senling Wang received his Ph.D. in Information Engineering from Kyushu Institute of Technology in
               2014 and leads this project. His research spans dependable computer systems, VLSI testing and fault
               diagnosis, reconfigurable computing, hardware security, and machine-learning-assisted testing and
               reliability. Building on this systems background, he develops digital-twin and Physical AI platforms that
               connect environment modeling, verified AI-agent planning, robot simulation, and industrial field
               validation.
-            </p>
+            </p></details>
             <div class="bio-links">
               <a href="https://researchmap.jp/senling_wang_scholar" target="_blank" rel="noopener" data-i18n="link_researchmap">researchmap</a>
               <a href="https://scholar.google.com/citations?hl=ja&user=uGmNX3kAAAAJ" target="_blank" rel="noopener" data-i18n="link_google_scholar">Google Scholar</a>
@@ -592,7 +122,7 @@
                 <h3>Kerun Li</h3>
               </div>
             </div>
-            <p data-i18n="member_li_bio">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="member_li_bio">
               Kerun Li is a second-year master's student in the Graduate School of Science and Engineering at Ehime
               University, specializing in embedded systems development. His work spans robot SLAM and navigation,
               computer vision, generative AI, and Real-to-Sim 3D scene reconstruction. As first author of the team's
@@ -601,7 +131,7 @@
               registered designs, and one software copyright, with one invention patent application under examination.
               As an undergraduate, he was named an Outstanding Graduate of Zhejiang Province and received the Zhejiang
               Provincial Government Scholarship.
-            </p>
+            </p></details>
             <a class="member-paper" href="./papers/m69484-li stamped-e.pdf">
               Real-to-Sim Scene Generation from a Single Photograph for Robot Simulation
             </a>
@@ -614,13 +144,13 @@
                 <h3>Tomoki Kuzuhara</h3>
               </div>
             </div>
-            <p data-i18n="member_kuzuhara_bio">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="member_kuzuhara_bio">
               Tomoki Kuzuhara is a second-year master's student in the Graduate School of Science and Engineering at
               Ehime University, specializing in cybersecurity. He develops and verifies the Prime Agent and builds
               knowledge bases for industrial fields. As first author of Env2FSA, he studies visual grounding,
               PDDL-consistent symbolic environment modeling, and counterexample-guided formal verification of robot
               behavior controllers.
-            </p>
+            </p></details>
             <a class="member-paper" href="./papers/m70884-kuzuhara stamped-e.pdf">
               Env2FSA: Automatic Symbolic Environment Modeling for Behavioral Controller Verification
             </a>
@@ -633,13 +163,13 @@
                 <h3>Shintaro Ono</h3>
               </div>
             </div>
-            <p data-i18n="member_ono_bio">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="member_ono_bio">
               Shintaro Ono is a second-year master's student in the Graduate School of Science and Engineering at Ehime
               University, specializing in image processing. His project work covers static spatial model generation,
               analog meter digitization, and in-field change detection. As first author of a comparative study of indoor
               reconstruction methods, he evaluates BEV, heightmap, and plane-based approaches for generating
               simulation-ready static geometry from LiDAR point clouds.
-            </p>
+            </p></details>
             <a class="member-paper" href="./papers/m65258-ono stamped-e.pdf">
               Comparative Analysis of Indoor Reconstruction Methods for Digital Twin Generation
             </a>
@@ -652,13 +182,13 @@
                 <h3>Jingjing Shen</h3>
               </div>
             </div>
-            <p data-i18n="member_shen_bio">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="member_shen_bio">
               Jingjing Shen is a second-year master's student in the Graduate School of Science and Engineering at
               Ehime University, specializing in planning optimization. She designs and validates action-planning
               agents. As first author of the team's language-driven heterogeneous multi-robot planning framework, she
               studies natural-language task decomposition, capability-aware team formation and allocation, structured
               experience memory, and feedback-driven plan repair.
-            </p>
+            </p></details>
             <a class="member-paper" href="./papers/m70501-shen stamped-e.pdf">
               Language-Driven Heterogeneous Multi-Robot Task Planning with Structured Experience Memory
             </a>
@@ -671,7 +201,7 @@
                 <h3>Mizuki Takahashi</h3>
               </div>
             </div>
-            <p data-i18n="member_mizuki_bio">
+            <details class="biography"><summary data-i18n="r_bio_more">Biography</summary><p data-i18n="member_mizuki_bio">
               Mizuki Takahashi is a first-year master's student in the Graduate School of Science and Engineering at
               Ehime University, specializing in autonomous mobility and manipulation control for AI robots. He develops
               the Slave Agent that grounds tasks issued by the Prime Agent in the physical world, integrating Unitree
@@ -679,12 +209,10 @@
               will integrate SO-101 Arm and back-mounted arm configurations with Go2 for handover and delivery tasks,
               while fine-tuning Vision-Language-Action models for robot manipulation conditioned on visual observations
               and language instructions.
-            </p>
+            </p></details>
           </article>
         </div>
-      </section>
-
-      <section id="contact" class="section callout">
+      </section><section id="contact" class="section callout">
         <h2 data-i18n="contact_title">Open for research collaboration</h2>
         <p data-i18n="contact_text">
           We are looking for partners interested in industrial digital twins, AI-native factory systems, field
@@ -707,9 +235,7 @@
         >
           Contact the lab
         </a>
-      </section>
-
-      <section id="reach" class="section reach-section">
+      </section><section id="reach" class="section reach-section">
         <div class="section-kicker" data-i18n="reach_kicker">Global Reach</div>
         <h2 data-i18n="reach_title">Where this research is being discovered</h2>
         <p class="lead" data-i18n="reach_lead">
@@ -745,15 +271,7 @@
             ></iframe>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer>
+      </section></main><footer>
       <p>Digital Twin Physical AI Robotics · Ehime University Computer Science Lab</p>
       <p class="muted" data-i18n="footer_note">Public research site with privacy-friendly aggregate access analytics.</p>
-    </footer>
-    <script data-goatcounter="https://sunnywang.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-    <script src="./analytics.js"></script>
-    <script src="./language.js"></script>
-  </body>
-</html>
+    </footer><script data-goatcounter="https://sunnywang.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script src="./analytics.js"></script><script src="./language.js"></script><script src="./site-content.js"></script><script src="./research.js"></script></body></html>

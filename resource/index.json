@@ -1,0 +1,162 @@
+[
+  {
+    "id": "inspection-agent-chat",
+    "file": "inspection-agent-chat.mp4",
+    "poster": "inspection-agent-chat.jpg",
+    "title": {
+      "en": "Agent chat and tool execution",
+      "ja": "エージェントとの対話とツール実行",
+      "zh": "智能体对话与工具执行"
+    },
+    "description": {
+      "en": "A weather query demonstrates natural-language interaction and tool calls in the management prototype. It is not an autonomous inspection evaluation.",
+      "ja": "天気の問い合わせを例に、管理プロトタイプの自然言語対話とツール呼出しを実演。自律点検の性能評価ではありません。",
+      "zh": "以天气查询演示管理原型的自然语言对话和工具调用，并非自主巡检性能评估。"
+    },
+    "source_review": "2026-09",
+    "source_slide": 9,
+    "duration_seconds": 48.13,
+    "bytes": 550967,
+    "edition": "silent web encoding; normal playback speed"
+  },
+  {
+    "id": "scheduled-inspection-agent",
+    "file": "scheduled-inspection-agent.mp4",
+    "poster": "scheduled-inspection-agent.jpg",
+    "title": {
+      "en": "Scheduled agent execution",
+      "ja": "エージェントの定時実行",
+      "zh": "智能体定时执行"
+    },
+    "description": {
+      "en": "Create a scheduled task and observe its execution using a weather-query example. The clip demonstrates scheduling behavior in the application.",
+      "ja": "天気の問い合わせを例に、タスクの日時設定と実行を確認。アプリ内のスケジュール機能を示します。",
+      "zh": "以天气查询为例，设置任务时间并观察执行，展示应用中的定时功能。"
+    },
+    "source_review": "2026-09",
+    "source_slide": 10,
+    "duration_seconds": 87.96,
+    "bytes": 1071126,
+    "edition": "silent web encoding; normal playback speed"
+  },
+  {
+    "id": "inspection-alert-history",
+    "file": "inspection-alert-history.mp4",
+    "poster": "inspection-alert-history.jpg",
+    "title": {
+      "en": "Alert records and resolution",
+      "ja": "アラート記録と対応状態の管理",
+      "zh": "告警记录与处理状态"
+    },
+    "description": {
+      "en": "Sample alerts, image evidence, and resolution states in the management prototype. The records do not establish real-site detection accuracy.",
+      "ja": "サンプルのアラート、画像、対応状態を管理プロトタイプで確認。実現場での異常検知精度を示すものではありません。",
+      "zh": "在管理原型中查看示例告警、图像证据和处理状态，这些记录不代表现场异常检测精度。"
+    },
+    "source_review": "2026-09",
+    "source_slide": 11,
+    "duration_seconds": 27.68,
+    "bytes": 633387,
+    "edition": "silent web encoding; normal playback speed"
+  },
+  {
+    "id": "two-robot-waypoint-inspection",
+    "file": "two-robot-waypoint-inspection.mp4",
+    "poster": "two-robot-waypoint-inspection.jpg",
+    "title": {
+      "en": "Two-robot waypoint inspection",
+      "ja": "2台のロボットによるウェイポイント点検",
+      "zh": "双机器人航点巡检"
+    },
+    "description": {
+      "en": "Two robots move through the simulated environment in response to an inspection request. The simulation viewport is cropped for clarity.",
+      "ja": "点検の依頼に応じて、2台のロボットがシミュレーション環境を移動します。見やすいように仮想環境の表示部分を切り出しています。",
+      "zh": "两台机器人根据巡检请求在仿真环境中移动，画面裁切至仿真视口以便观察。"
+    },
+    "source_review": "2026-09",
+    "source_slide": 12,
+    "duration_seconds": 289.51,
+    "bytes": 6069176,
+    "edition": "silent viewport crop; normal playback speed"
+  },
+  {
+    "id": "two-robot-inspection-console",
+    "file": "two-robot-inspection-console.mp4",
+    "poster": "two-robot-inspection-console.jpg",
+    "title": {
+      "en": "Inspection agent execution log",
+      "ja": "点検エージェントの実行ログ",
+      "zh": "巡检智能体执行日志"
+    },
+    "description": {
+      "en": "The management application displays robot-tool calls for the waypoint inspection. This is the application-side recording of the simulated task.",
+      "ja": "ウェイポイント点検のロボット操作ツール呼出しを管理アプリに表示。シミュレーションのタスクをアプリ側から記録したものです。",
+      "zh": "管理应用显示航点巡检中的机器人操作工具调用，记录仿真任务在应用端的执行过程。"
+    },
+    "source_review": "2026-09",
+    "source_slide": 12,
+    "duration_seconds": 280.67,
+    "bytes": 2818118,
+    "edition": "silent web encoding; normal playback speed"
+  },
+  {
+    "id": "go2-showroom-simulation",
+    "file": "go2-showroom-simulation.mp4",
+    "poster": "go2-showroom-simulation.jpg",
+    "title": {
+      "en": "Go2 motion in a showroom simulation",
+      "ja": "ショールーム内でのGo2動作試験",
+      "zh": "展厅仿真中的Go2运动测试"
+    },
+    "description": {
+      "en": "A development-stage locomotion test, cropped to the viewport. This recording does not demonstrate VLA-based autonomous control.",
+      "ja": "開発環境での移動試験。表示領域を切り出しています。VLAによる自律制御の実演ではありません。",
+      "zh": "开发阶段的移动测试，画面裁切至视口。本视频并非VLA自主控制演示。"
+    },
+    "source_review": "2026-09",
+    "source_slide": 5,
+    "duration_seconds": 176.36,
+    "bytes": 1586276,
+    "edition": "silent viewport crop; normal playback speed"
+  },
+  {
+    "id": "ros2-triggered-fire-event",
+    "file": "ros2-triggered-fire-event.mp4",
+    "poster": "ros2-triggered-fire-event.jpg",
+    "title": {
+      "en": "ROS 2-triggered fire event",
+      "ja": "ROS 2による火災イベント発生",
+      "zh": "ROS 2触发火灾事件"
+    },
+    "description": {
+      "en": "A controlled fire event in Isaac Sim for future inspection experiments. Terminal and desktop areas are cropped out. This demonstrates event generation, not anomaly detection.",
+      "ja": "今後の点検実験に用いるIsaac Sim内の火災イベント。ターミナルとデスクトップは切り出し対象外としました。異常検知ではなく、イベント発生を示します。",
+      "zh": "用于后续巡检实验的Isaac Sim火灾事件。画面不含终端和桌面区域，展示事件生成而非异常检测。"
+    },
+    "source_review": "2026-10-06",
+    "source_slide": 8,
+    "duration_seconds": 63.3,
+    "bytes": 3005671,
+    "edition": "silent viewport crop; normal playback speed"
+  },
+  {
+    "id": "agv-arm-transfer-corrected",
+    "file": "agv-arm-transfer-corrected.mp4",
+    "poster": "agv-arm-transfer-corrected.jpg",
+    "title": {
+      "en": "AGV and arm object transfer",
+      "ja": "AGV・アーム間の物体受渡し",
+      "zh": "AGV与机械臂物体交接"
+    },
+    "description": {
+      "en": "Corrected pickup-position handling in a two-AGV, two-arm simulation. Contact-accurate grasping and integrated planning performance are outside this test.",
+      "ja": "AGV 2台・アーム2台のシミュレーションで、修正した受取位置を確認。接触を伴う把持の精度や全体の計画性能は、この試験の対象外です。",
+      "zh": "在两台AGV、两台机械臂的仿真中确认修正后的接取位置。本测试不评估接触抓取精度或整体规划性能。"
+    },
+    "source_review": "2026-10-06",
+    "source_slide": 11,
+    "duration_seconds": 22.13,
+    "bytes": 891851,
+    "edition": "silent web encoding; normal playback speed"
+  }
+]
