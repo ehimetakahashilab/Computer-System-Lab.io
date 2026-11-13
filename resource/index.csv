@@ -1,9 +1,12 @@
-﻿"id","title_en","title_ja","title_zh","file","source_review","source_slide","duration_seconds","bytes"
-"inspection-agent-chat","Agent chat and tool execution","エージェントとの対話とツール実行","智能体对话与工具执行","inspection-agent-chat.mp4","2026-09","9","48.13","550967"
-"scheduled-inspection-agent","Scheduled agent execution","エージェントの定時実行","智能体定时执行","scheduled-inspection-agent.mp4","2026-09","10","87.96","1071126"
-"inspection-alert-history","Alert records and resolution","アラート記録と対応状態の管理","告警记录与处理状态","inspection-alert-history.mp4","2026-09","11","27.68","633387"
-"two-robot-waypoint-inspection","Two-robot waypoint inspection","2台のロボットによるウェイポイント点検","双机器人航点巡检","two-robot-waypoint-inspection.mp4","2026-09","12","289.51","6069176"
-"two-robot-inspection-console","Inspection agent execution log","点検エージェントの実行ログ","巡检智能体执行日志","two-robot-inspection-console.mp4","2026-09","12","280.67","2818118"
-"go2-showroom-simulation","Go2 motion in a showroom simulation","ショールーム内でのGo2動作試験","展厅仿真中的Go2运动测试","go2-showroom-simulation.mp4","2026-09","5","176.36","1586276"
-"ros2-triggered-fire-event","ROS 2-triggered fire event","ROS 2による火災イベント発生","ROS 2触发火灾事件","ros2-triggered-fire-event.mp4","2026-10-06","8","63.3","3005671"
-"agv-arm-transfer-corrected","AGV and arm object transfer","AGV・アーム間の物体受渡し","AGV与机械臂物体交接","agv-arm-transfer-corrected.mp4","2026-10-06","11","22.13","891851"
+﻿id,title_en,title_ja,title_zh,file,source_review,source_slide,duration_seconds,bytes
+inspection-agent-chat,Agent chat and tool execution,エージェントとの対話とツール実行,智能体对话与工具执行,inspection-agent-chat.mp4,2026-09,9,48.13,550967
+scheduled-inspection-agent,Scheduled agent execution,エージェントの定時実行,智能体定时执行,scheduled-inspection-agent.mp4,2026-09,10,87.96,1071126
+inspection-alert-history,Alert records and resolution,アラート記録と対応状態の管理,告警记录与处理状态,inspection-alert-history.mp4,2026-09,11,27.68,633387
+two-robot-waypoint-inspection,Two-robot waypoint inspection,2台のロボットによるウェイポイント点検,双机器人航点巡检,two-robot-waypoint-inspection.mp4,2026-09,12,289.51,6069176
+two-robot-inspection-console,Inspection agent execution log,点検エージェントの実行ログ,巡检智能体执行日志,two-robot-inspection-console.mp4,2026-09,12,280.67,2818118
+go2-showroom-simulation,Go2 motion in a showroom simulation,ショールーム内でのGo2動作試験,展厅仿真中的Go2运动测试,go2-showroom-simulation.mp4,2026-09,5,176.36,1586276
+ros2-triggered-fire-event,ROS 2-triggered fire event,ROS 2による火災イベント発生,ROS 2触发火灾事件,ros2-triggered-fire-event.mp4,2026-10-06,8,63.3,3005671
+agv-arm-transfer-corrected,AGV and arm object transfer,AGV・アーム間の物体受渡し,AGV与机械臂物体交接,agv-arm-transfer-corrected.mp4,2026-10-06,11,22.13,891851
+factory-scene-placement-202611,Automatic factory scene placement,工場シーンの自動配置,工厂场景自动布置,factory-scene-placement-202611.mp4,2026-11-10,5,26,18904296
+go2-autonomous-navigation-202611,Go2 continuous navigation,Go2の連続自律走行,Go2连续自主行驶,go2-autonomous-navigation-202611.mp4,2026-11-10,3,65,8973656
+showroom-map-simulation-202610,Showroom simulation and map preparation,ショールームのシミュレーションと地図準備,展厅仿真与地图准备,showroom-map-simulation-202610.mp4,2026-10-27,5,28,560500

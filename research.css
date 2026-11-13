@@ -148,3 +148,13 @@ footer p{margin:5px 0}
 }
 @media(max-width:760px){.site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center}.site-header .brand{font-size:14px}.site-header nav{grid-column:1 / -1;width:auto}.language-switch{align-self:center}.biography:not([open])>p{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* November field study */
+.animation-control{display:block;margin-top:12px;padding:8px 12px;background:white;color:var(--ink);border:1px solid var(--line);border-radius:4px;font:inherit;font-size:13px;cursor:pointer}
+.field-study{background:#f1f6f3;border-block:1px solid var(--line)}
+.field-views{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}
+.field-views img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.adaptation-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:24px 0 24px 24px;border-block:1px solid var(--line);line-height:1.7}
+.adaptation-steps li{padding-right:16px;font-weight:650}
+.demo-figure>.text-link{display:inline-block;margin-top:12px}
+@media(max-width:700px){.field-views{grid-template-columns:1fr}.adaptation-steps{grid-template-columns:1fr 1fr;gap:18px}}
