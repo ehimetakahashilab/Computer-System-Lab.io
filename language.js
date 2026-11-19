@@ -1,5 +1,6 @@
 const translations = {
   en: {
+    nav_mentor: "Student mentor",
     updates_nav: "Latest progress",
     updates_kicker: "Research update · October 2026",
     updates_title: "Connecting perception, planning, and robot execution",
@@ -260,6 +261,7 @@ const translations = {
       "When HIME cannot grasp an object, it asks a nearby person for help and continues the transport task."
   },
   ja: {
+    nav_mentor: "学生用AI指導",
     updates_nav: "最新の進捗",
     updates_kicker: "研究進捗 · 2026年10月",
     updates_title: "認識・計画・ロボット実行をつなぐ",
@@ -520,6 +522,7 @@ const translations = {
       "HIMEが把持できない物体について近くの人へ協力を依頼し、搬送タスクを継続する実機デモです。"
   },
   zh: {
+    nav_mentor: "学生指导助手",
     updates_nav: "最新进展",
     updates_kicker: "研究进展 · 2026年10月",
     updates_title: "连接环境感知、任务规划与机器人执行",
